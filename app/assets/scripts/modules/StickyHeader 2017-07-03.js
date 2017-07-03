@@ -15,16 +15,15 @@ class StickyHeader {
 		this.refreshWaypoints();
 	}
 
-	refreshWaypoints() {
+	refreshWaypoints {
 		this.lazyImages.load(function() {
-			Waypoint.refreshAll();
+				Waypoint.refreshAll();
 		});
 	}
 
 	addSmoothScrolling() {
 		this.headerLinks.smoothScroll();
 	}
-
 
 	createHeaderWaypoint() {
 		var that = this;
