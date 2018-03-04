@@ -1,0 +1,1959 @@
+/*MAMP version*/
+
+
+/** {
+  border: 1px solid green;
+}*/
+
+/*dunkelblauer Hintergund hinter den Wellen*/
+/*main { background-color: #0071bc; }*/
+
+.flex-img {
+  flex: 0 1 100%;
+}
+
+img.align-self {
+  align-self: center;
+}
+
+.BildZentrieren {
+  display: block;
+  margin: 0 auto;
+}
+
+/*Tagline sanft überblenden*/
+#tagline {
+  /*background-color: green;
+  opacity: 0.2;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;*/
+}
+
+/*sind die Eigenschaften eines id gewichtiger als die einer Klasse?*/
+
+.taglineZart {
+  /*background-color: green;*/
+  opacity: 0.0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.taglineHeftig {
+  /*background-color: red;*/
+  opacity: 1.0;
+}
+
+/*#tagline:hover {*/
+  /*opacity: 1.0;*/
+  /*background-color: red;*/
+  /*animation:fadeout 5.5s;
+  -moz-animation:fadeout 6.0s;
+  -webkit-animation:fadeout 5.5s;*/
+  /*animation:fadein 5.5s;
+  -moz-animation:fadein 6.0s;
+  -webkit-animation:fadein 5.5s;*/
+/*}*/
+
+.taglineClass {
+  opacity: 1.0;
+  /*background-color: red;*/
+  /*animation:fadeout 2.5s;
+  -moz-animation:fadeout 3.0s;
+  -webkit-animation:fadeout 2.5s;*/
+  /*animation:fadein 2.5s;
+  -moz-animation:fadein 3.0s;
+  -webkit-animation:fadein 2.5s;*/
+  /*background-color: #00ff00;*/
+  /*color: red;
+  border: solid 5px;
+  border-color: green*/
+
+  /*-webkit-animation:fadeout 5.5s;
+  -moz-animation:fadeout 6.0s;
+  animation:fadeout 5.5s;
+  -webkit-animation:fadein 5.5s;
+  -moz-animation:fadein 6.0s;
+  animation:fadein 5.5s;*/
+}
+
+/*@keyframes fadein{from{opacity:0;}to{opacity:1;}}
+@-moz-keyframes fadein{from{opacity:0;}to{opacity:1;}}
+@-webkit-keyframes fadein{from{opacity:0;}to{opacity:1;}}
+@-o-keyframes fadein{from{opacity:0;}to{opacity:1;}}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+.grosses-bild {
+  max-width: 600px;
+  /*height: auto;*/
+}
+
+
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  /*zu Testzwecken eingefärbt*/
+  /*background-color: #d7a7d8;*/
+  /*zum Testen ob dann das Bilder besser skaliert wird*/
+  flex-wrap: wrap;
+}
+
+.flex-outer-wrap {
+  display: flex;
+  flex-direction: column;
+  
+  min-height: 94vh; /* für iPhone 6 */
+  min-height: 96.5vh; /* für iPad */
+
+  /*min-height: 100%;*/
+  /*background-color: #b9edf5;*/
+}
+
+.flex-footer {
+  flex: none;
+  flex: 1 0 auto;
+}
+
+.flexie {
+  flex-grow: 1;
+}
+
+.flex-aus {
+  flex: none;
+  flex: 0 0 auto;
+}
+
+
+.logo_Design { fill: #B3B3B3; }
+.logo_diamant { fill: #639ad3; }
+
+.zentrierter-text {
+  /*zum testen auskomentiert*/
+  /*margin-left: auto;*/
+
+  /*margin-right:25px;*/
+
+  /*margin-right: 4%;*/
+  /*Abhilfe ohne zu verstehen, warum der Text nicht zentriert ist*/
+  /*der Trick fällt natürlich auf, wenn der Hintergrund eine Farbe bekommt*/
+}
+
+.btn.navbar-btn.navbar-right.btn-success {
+  margin-right: 0px;
+  /*Damit der rechte Button Rand bündig abschliest und nicht der Button Text*/
+}
+
+.test {
+  margin-right: 0px;
+  /*Damit der rechte Button Rand bündig abschliest und nicht der Button Text*/
+}
+
+
+figure_logo {
+  margin: 0;
+  padding: 0;
+  /*height: 100px;*/
+  height: 100px;
+  position: relative;
+  bottom: -100px;  
+}
+
+figure_logo img {
+  position: absolute;
+  bottom: 50px;
+  -webkit-animation: logo 4s infinite ease-in-out;
+  -moz-animation: logo 4s infinite ease-in-out;
+  animation: logo 4s infinite ease-in-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  /*height: 100px;*/
+  height: 75px;
+  /*height: 70px;*/
+  position: relative;
+
+  /*Test GPU*/
+  /*-webkit-transform: translate3d(0,0,0);*/
+
+  /*-webkit-transform: translate3d(0);
+  -moz-transform: translate3d(0);
+  -ms-transform: translate3d(0);
+  -o-transform: translate3d(0);
+  transform: translate3d(0);*/
+
+  -webkit-transform: transition3d(0,0,0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: transition3d(0,0,0);
+  -moz-transform: translateZ(0);
+  -ms-transform: transition3d(0,0,0);
+  -ms-transform: translateZ(0);
+  -o-transform: transition3d(0,0,0);
+  -o-transform: translateZ(0);
+  transform: transition3d(0,0,0);
+  transform: translateZ(0);
+
+  /*-webkit-transform: rotate(0,0,0deg);*/
+
+}
+
+figure img {
+  position: absolute;
+  bottom: -60px;
+  left: 60px;
+  -webkit-animation: logo 4s infinite ease-in-out;
+  -moz-animation: logo 4s infinite ease-in-out;
+  animation: logo 4s infinite ease-in-out;
+}
+
+figure .wellen {
+  position: absolute; bottom: 0px; left: 0px;
+  width: 100%; height: 100px;
+  background: 0, 0;
+  background-size: auto 120px;
+  -webkit-animation: wellen 4s infinite linear;
+  -moz-animation: wellen 4s infinite linear;
+  animation: wellen 4s infinite linear;
+}
+
+figure .wellen_links {
+  position: absolute; bottom: 0px; left: 0px;
+  width: 100%; height: 100px;
+  background: 0, 0;
+  background-size: auto 120px;
+  -webkit-animation: wellen_links 4s infinite linear;
+  -moz-animation: wellen_links 4s infinite linear;
+  animation: wellen_links 4s infinite linear;
+}
+
+figure .wellen.vorne {
+  background-image: url(../_images/wellen_vorne.svg);
+  /*wenn alle Wellen schwarz sind*/
+  /*opacity: 0.11;*/
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+figure .wellen_links.mitte {
+  background-image: url(../_images/wellen_mitte.svg);
+  /*Wenn ale Wellen unterschiedlich grau sind*/
+  opacity: 0.80;
+  /*wenn alle Wellen schwarz sind*/
+  /*opacity: 0.11;*/
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+figure .wellen.hinten {
+  background-image: url(../_images/wellen_hinten.svg);
+  /*wenn alle Wellen schwarz sind*/
+  /*opacity: 0.11;*/
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+
+@-webkit-keyframes wellen {
+  0% { background-position: 0 0; }
+  100% { background-position: -240px 0; }
+}
+
+@-moz-keyframes wellen {
+  0% { background-position: 0 0; }
+  100% { background-position: -240px 0; }
+}
+
+@keyframes wellen {
+  0% { background-position: 0 0; }
+  100% { background-position: -240px 0; }
+}
+
+
+@-webkit-keyframes wellen_links {
+  0% { background-position: 0 0; }
+  100% { background-position: 240px 0; }
+}
+
+@-moz-keyframes wellen_links {
+  0% { background-position: 0 0; }
+  100% { background-position: 240px 0; }
+}
+
+@keyframes wellen_links {
+  0% { background-position: 0 0; }
+  100% { background-position: 240px 0; }
+}
+
+
+@-webkit-keyframes logo {
+  0% { bottom: 68px; -webkit-transform: rotate(-4deg); }
+  50% { bottom: 52px; -webkit-transform: rotate(3deg); }
+  100% { bottom: 68px; -webkit-transform: rotate(-4deg); }
+}
+
+@-moz-keyframes logo {
+  0% { bottom: 68px; -moz-transform: rotate(-4deg); }
+  50% { bottom: 52px; -moz-transform: rotate(3deg); }
+  100% { bottom: 68px; -moz-transform: rotate(-4deg); }
+}
+
+@-o-keyframes logo {
+  0% { bottom: 68px; -moz-transform: rotate(-4deg); }
+  50% { bottom: 52px; -moz-transform: rotate(3deg); }
+  100% { bottom: 68px; -moz-transform: rotate(-4deg); }
+}
+
+@keyframes logo {
+  0% { bottom: 68px; transform: rotate(-4deg); }
+  50% { bottom: 52px; transform: rotate(3deg); }
+  100% { bottom: 68px; transform: rotate(-4deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+.three-diamants {
+  color: #a8a8a8;
+  font-size: 0.8em;
+  /*vertical-align: 1.1em;*/
+  line-height: 1em;
+  /*optische Rechtsbündigkeit der drei Diamanten*/
+  margin-right: 4px;
+
+}
+
+/*Änderung der navbar Höhe von 50px aus der bootstrap css*/
+/*.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+}*/
+/*Änderung der navbar Höhe von 50px aus der bootstrap css*/
+
+.navbar-inverse .navbar-toggle {
+    /*border-color: none !important;*/
+}
+
+.three-diamants:hover {
+  color: #fff;
+}
+
+.navbar-toggle {
+    margin-top: 10px;
+  }
+
+
+/*Ihre Nachricht wurde erfogreich verschickt. Ich melde mich in Kürze.*/
+.alert {
+  border-radius: 0px;
+}
+
+.alert-danger {
+  border: none;
+  /*color: #3d3c3c;*/
+}
+
+/*Ihre Nachricht wurde erfogreich verschickt. Ich melde mich in Kürze.*/
+.alert-info {
+  border: none;
+  /*color: #50521a;*/
+}
+
+/*Ihre Nachricht wurde erfogreich verschickt. Ich melde mich in Kürze.*/
+.alert-warning {
+  border: none;
+  /*color: #61420a;*/
+}
+
+/*Ihre Nachricht wurde erfogreich verschickt. Ich melde mich in Kürze.*/
+.alert-success {
+  border: none;
+  /*color: #665814;*/
+}
+
+
+/*Test Farbfelder*/
+.Farbfeld{
+  /*width: 100%;*/
+  height: 4px;
+  /*display: inline;*/
+  /*float: left;*/
+  margin-top: -3px;
+}
+
+.Farbfeld .pri{
+  background-color: #548ebf;
+}
+
+.Farbfeld .suc{
+  background-color: #fedb32;
+}
+
+.Farbfeld .inf{
+  background-color: #c9cc42;
+}
+
+.Farbfeld .war{
+  background-color: #f2a619;
+}
+
+.Farbfeld .dan{
+  background-color: #999597;
+}
+
+
+/*Test um den Abstand der Textzeile über den Karten etwas zu vergrößern*/
+.tagline-above-cards{
+  margin-bottom: 15px;
+  /*Abstand Navigation - Textzeile*/
+  margin-top:22px;
+}
+
+/*aus bootstrap.css*/
+/*um den oberen Abstand der page-header zum jumbotron etwas zu verringern*/
+.page-header {
+  /*margin: 22px 0 22px;*/
+}
+
+
+
+/*Test um die Karten auch bei ungünstigen Verhältnissen zu zentrieren*/
+.center-cards {
+  /*display: block;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*stackoverflow.com/questions/9526970/can-the-twitter-bootstrap-carousel-plugin-fade-in-and-out-on-slide-transition*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/*stackoverflow.com/questions/9526970/can-the-twitter-bootstrap-carousel-plugin-fade-in-and-out-on-slide-transition*/
+
+
+/*Versuche das gelb als Button-Farbe zu verwenden und die Schrift von weiss auf schwarz zu stellen*/
+/*ist ja fast eine Verdopplung aus der Datei bootstrap-theme.css*/
+/*eigentlich soll ja nur die Textfarbe und der textschatten verändert werden*/
+.btn-success {
+  /*Grau von nav-bar*/
+  /*color: #383838;*/
+  color: #151515;
+  background-color: #fedb32;
+  border-color: #f3be25;
+  text-shadow: 0 +1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-success:active,
+.btn-success.active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #383838;
+  background-color: #f0b60e;
+  border-color: #cf9d0c;
+}
+
+.btn-success {
+  background-image: -webkit-linear-gradient(top, #fedb32 0%, #e7af0d 100%);
+  background-image: -o-linear-gradient(top, #fedb32 0%, #e7af0d 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fedb32), to(#e7af0d));
+  background-image: linear-gradient(to bottom, #fedb32 0%, #e7af0d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffedb32', endColorstr='#ffe7af0d', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #dda80d;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #e7af0d;
+  background-position: 0 -15px;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #e7af0d;
+  border-color: #dda80d;
+}
+.btn-success.disabled,
+.btn-success:disabled,
+.btn-success[disabled] {
+  background-color: #e7af0d;
+  background-image: none;
+}
+
+
+/*Versuche das gelb als Button-Farbe zu verwenden und die Schrift von weiss auf schwarz zu stellen*/
+
+
+
+
+
+mark {
+  /*background: #ff0;*/
+  color: #a8a8a8;
+  background-color: #fff9dd;
+  padding: 0.2em;
+}
+
+mark,
+.mark {
+  /*background-color: #fcf8e3;*/
+  /*padding: .2em;*/
+}
+
+.diamant-small-grey {
+  /*color: #e3e3e3;*/
+  /*color: #D3D3D3;*/
+  color: #e6e6e6;
+  font-size: 0.8em;
+  vertical-align: 0.1em;
+}
+
+.diamant-small-grey-alpha {
+  /*color: #e3e3e3;*/
+  /*color: #D3D3D3;*/
+  /*color: #e6e6e6;*/
+  color: rgba(255, 255, 255, 0.33);
+  font-size: 0.8em;
+  vertical-align: 0.1em;
+}
+
+.diamant-small-grey-emboss {
+  /*color: #e3e3e3;*/
+  /*color: #D3D3D3;*/
+  color: #e6e6e6;
+  font-size: 0.8em;
+  vertical-align: 0.1em;
+  text-shadow: -0.9px -0.2px 0.0px rgba(0, 0, 10, 0.75), 1.2px  0.5px 0px rgba(255, 255, 255, 0.99);
+}
+
+.diamant-small-white {
+  /*color: #e3e3e3;*/
+  /*color: #D3D3D3;*/
+  color: #FFFFFF;
+  opacity: 0.44x;
+  font-size: 0.8em;
+  vertical-align: 0.1em;
+}
+
+
+.jumbotron {
+  /*original 91% Grau von Bootstrap*/
+  background-color: #e7e7e7;
+  /*background-color: #E1E1E1;*/
+}
+
+.fussbanner {
+  color: #e3e3e3;
+  /*color: #DEDEDE;*/
+  /*color: #f9ce95;*/
+  /*color: #fab956;*/
+  /*color: rgba(250, 185, 86, 0.15);*/
+  font-size: 0.44em;
+  vertical-align: 0.3em;
+  text-shadow: -1.0px -1px 0px rgba(0, 0, 100, 0.20), 1.0px  1px 0px rgba(255, 255, 255, 1.0);
+}
+
+.fussnavbar {
+  color: #333333;
+  color: #3F3F3F;
+  color: #fab956;
+  color: rgba(250, 185, 86, 0.88);
+  color: #595959;
+  font-size: 0.6em;
+  vertical-align: 0.1em;
+  /*text-shadow: -0.8px -0.5px 0px rgba(0, 0, 10, 1.0), 1.2px  0.5px 0px rgba(255, 255, 255, 0.99);*/
+}
+
+.fussweiss {
+  color: #e3e3e3;
+  /*color: #DEDEDE;*/
+  /*color: #f9ce95;*/
+  /*color: #fab956;*/
+  /*color: rgba(250, 185, 86, 0.15);*/
+  font-size: 0.44em;
+  vertical-align: 0.3em;
+  text-shadow: -1.0px -1px 0px rgba(0, 0, 100, 0.20), 1.0px  1px 0px rgba(255, 255, 255, 1.0);
+}
+
+
+.thin {
+  /*font-family: source_sans_prolight, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: source_sans_proextralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  /*line-height: 1.42857143;*/
+  /*color: #BFBFBF;*/
+  /*background-color: #ffffff;*/
+  /*letter-spacing: 0.075em;*/
+  /*text-rendering: optimizeLegibility;*/
+}
+
+
+
+/*TEST CSS_TRICKS.COM*/
+.zitat blockquote {
+  line-height: 1.23em;
+  quotes: "\201D""\201C";
+  text-shadow: -1px -1px 0px rgba(0, 0, 100, 0.15), 1px  1px 0px rgba(255, 255, 255, 1.0);
+  /*hier wird lokal der senkrechte Strich aus bootstrap überschrieben*/
+  border-left: none;
+}
+
+.zitat blockquote:before {
+  /*color: #E5E6E6;*/
+  color: #e3e3e3;
+  /*color: #fab956;*/
+  content: open-quote;
+  font-size: 5em;
+  vertical-align: -0.630em;
+}
+
+.zitat blockquote:after {
+  /*color: #E6E6E6;*/
+  /*color: #DEDEDE;*/
+  color: #e3e3e3;
+  /*color: #fab956;*/
+  content: close-quote;
+  font-size: 5em;
+  vertical-align: -0.43em;
+}
+
+.zitat {
+  max-height: 46px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.inhalt {
+  text-shadow: none;
+}
+/*TEST CSS_TRICKS.COM*/
+
+
+
+
+/*v2b Formulare mit HTML und CSS*/
+:focus {
+    /*background: #EFEFEC;*/
+    /*background: #fedb32;*/
+    /*background opacity: 0.1;*/
+  }
+/*v2b Formulare mit HTML und CSS*/
+
+
+
+
+
+
+
+
+/*.img-rounded {
+  border-radius: 50%;
+  border-radius: 100px;
+}
+*/
+
+/*Test um die Menus im schmalen Zustand leicht transparent zu machen*/
+
+/*.navbar-header{
+  opacity: 0.5 !important;
+    }*/
+
+.navbar{
+    opacity: 0.98 !important;
+    }
+
+/*.nav{
+  opacity: 0.5 !important;
+}*/
+
+/*.navbar-collapse{
+  background:transparent !important;
+  opacity: 0.2 !important;
+}*/
+
+/*Test für die zufälligen Textzeilen unter design training*/
+.Zitat{
+  color: red;
+  font-size: 15rem;
+  /*top: -20px;*/
+  /*line-height: 10px;*/
+  /*padding-top: 20px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#fade {
+  /*height: 34.438em;
+  width: 50em;
+  margin: 1em auto -2.2em;
+  border: 5px solid #eee;
+  box-shadow: 1px 1px 5px 2px #777;*/
+}
+
+#fade img {
+    position: absolute;
+    transition: 3s ease-in-out;
+    /*opacity: ;: 0.25;*/
+}
+
+
+#fade:hover img:nth-of-type(2) {
+    opacity: 0;
+}
+
+/*kann man den body einzelner Seiten unterschiedlich färben?*/
+.schwarz {
+     background-color: #000;
+}
+
+/*Hier gab es einen Konflik, da .weiss für die Farbe bereits definiet ist*/
+/*Hier wird dann die weisse Schrift mit einem hellen Grau hinterlegt, was unerwünscht ist*/
+/*Die Frage ist, wofür wurde diese Regel gebraucht?*/
+/*.weiss {
+     background-color: #C6C6C6;
+}*/
+
+/*hr {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: 0;
+  border-top: 10px solid #e7444e;
+}*/
+
+
+/*html {
+  min-width: 480px;
+}*/
+
+
+
+/*um die Textgröße responsive zu machen*/
+/*aus Tutsplus Responsive Web Design Revisited*/
+
+/*------------------*/
+/* Basic Code Shell */
+/*------------------*/
+
+/** {
+  box-sizing: border-box;
+}
+*/
+/* Optional min width */
+/*html {
+  min-width: 20rem;
+}
+
+body {
+  font-size: 1.125rem;
+  line-height: 1.618em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.313em;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.563em 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin: 0.625em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 1.313em 0;
+}
+
+h4 {
+  font-size: 1.313em;
+  margin: 1.313em 0;
+}
+
+h5 {
+  font-size: 1.125em;
+  margin: 1.313em 0;
+}
+
+h6 {
+  font-size: 1em;
+  margin: 0.75em 0;
+}*/
+
+
+/*um die Textgröße responsive zu machen*/
+/*aus Tutsplus Responsive Web Design Revisited*/
+
+
+
+
+
+
+
+
+/*um die Abstände zwischen den Reihen zu beeinflussen*/
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0.6rem;
+   margin-left: 0.6rem;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0.6rem;
+   padding-left: 0.6rem;
+}
+/*um die Abstände zwischen den Reihen zu beeinflussen*/
+
+
+/*um immer einen vertikalen Scrollbalken zu haben, */
+/*damit nicht ein störender 20px Versprung zwischen Seiten*/
+/*mit und ohne Rollbalken stattfindet*/
+
+html {
+  /*didaktische testfarbe*/
+    /*background: #8fcc9a;*/
+
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+
+/*Farben*/
+.weiss {
+    color: #ffffff;
+    /*zu Testzwecken ein Rahmen anzeigen lassen*/
+    /*border: 1px solid green;*/
+}
+
+.hellgrau {
+    color: #7e7e7e;
+}
+
+.brand-primary {
+  /*blau*/
+  color: #548fc0;
+}
+
+.brand-success {
+  /*gelb*/
+  color: #fedb32;
+}
+
+.brand-info {
+  /*grün*/
+  color: #b1c03a;
+}
+
+.brand-warning {
+  /*orange*/
+  color: #e4a612;
+}
+
+.brand-danger {
+  /*grau*/
+  color: #908c8e;
+}
+
+.hr-brand-danger-auf-dunkel {
+  /*grau*/
+  border :none;
+  border-top: 1px solid #908c8e;
+  opacity: 0.60;
+}
+
+.hr-brand-danger-auf-hell {
+  /*grau*/
+  border :none;
+  border-top: 1px solid #908c8e;
+  opacity: 0.30;
+}
+
+/*body padding war als inline style in jedem einzelnen html Dokument definiert*/
+/*wird auf der sample Seite ohne jumbotron für das Video und die Bilder */
+/*im carrousel zu hoch*/
+/*15px padding und das video klebt*/
+body {
+    /*padding-top: 40px;*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Breakpoint 2800px*/
+@media (max-width: 2800px) {
+  .jumbotron {
+    padding: 30px 15px 0px 15px;
+    /*hier wird der bootstrap Wert (30px) überschrieben,*/
+    /*um den Abstand zwischen Jumbotron und der nachfolgenden Textzeile zu verringern*/
+    /*um den weissen Rand zwischen jumbotron und Bild zu eliminieren*/
+    /*margin-bottom: 5px;*/
+    padding: 15px 15px 0px 15px !important;
+    margin-bottom: 0px !important;
+    /*jetzt muß nur noch der Abstand zwischen Textzeile und Karten etwas vergrößert werden*/
+  }
+
+  /*um den Abstand der Karten zum Rand zu beeinflussen*/
+  .col-sm-10 {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+/*um den Abstand der Karten zum Rand zu beeinflussen*/
+
+/*Test: Einfärben des Bais div, um zu sehen, ob zwischen verschiedenen Breakpoint umgeschaltet wird*/
+.didaktisch {
+    /*background-color: rgba(20, 200, 200, 0.3);*/
+}
+
+/*aus bootstrap rüberkopiert 4883-4895*/
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+      /*padding-left: 60px;*/
+      /*padding-right: 60px;*/
+  }
+  
+}
+
+
+/*@media (max-width: 1600px) {
+  .didaktisch {
+      background-color: rgba(255, 226, 32, 0.3);
+  }
+  .col-sm-10 {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}*/
+
+
+
+
+
+
+
+/*Breakpoint 1200px*/
+/*temp didaktisch zum Testen*/
+@media (max-width: 1200px) {
+  .jumbotron {
+    /*sorgt für Abstand zum nachfolgenden*/
+    /*padding: 15px 15px 5px 15px; */
+    padding: 15px 15px 0px 15px !important;
+    margin-bottom: 0px !important;
+    /*background-color: #84FF87 !important;*/
+    /*border: 3px solid blue;*/
+  }
+
+  /*Test: Einfärben des Bais div, um zu sehen, ob zwischen verschiedenen Breakpoint umgeschaltet wird*/
+  .didaktisch  {
+      /*background-color: rgba(10, 200, 10, 0.3);*/
+      /*background-color: #e0e7ed;*/
+
+  }
+
+/*aus bootstrap rüberkopiert 4883-4895*/
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+      /*padding-left: 60px;*/
+      /*padding-right: 60px;*/
+  }
+
+  .jumbotron h1,
+  .jumbotron .h1 {
+      font-size: 64px;
+  }
+
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+  .col-sm-10 {
+    /*padding-left: 60px;*/
+    padding-left: 6%;
+    padding-right: 0px;
+  }
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+
+  .flex-outer-wrap {
+   /*min-height: 97.5vh;*/
+   min-height: 96.5vh;
+   min-height: 97.5vh;
+   /*min-height: 98.5vh;*/
+  }
+
+} 
+
+
+
+
+
+
+/*Breakpoint 991px*/
+@media (max-width: 991px) {
+  .jumbotron {
+    /*sorgt für Abstand zum nachfolgenden*/
+    /*padding: 15px 15px 5px 15px;*/
+    padding: 15px 15px 0px 15px !important;
+    margin-bottom: 0px !important;
+    /*background-color: #84FF87 !important;*/
+    /*border: 3px solid blue;*/
+  }
+
+  /*Test: Einfärben des Bais div, um zu sehen, ob zwischen verschiedenen Breakpoint umgeschaltet wird*/
+  .didaktisch  {
+      /*background-color: rgba(220, 190, 40, 0.3);*/
+  }
+
+/*aus bootstrap rüberkopiert 4883-4895*/
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+      /*padding-left: 60px;*/
+      /*padding-right: 60px;*/
+      /*display: flex;
+      flex-direction: column;
+      min-height: 100vh;*/
+  }
+
+  .jumbotron h1,
+  .jumbotron .h1 {
+      font-size: 64px;
+  }
+
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+  .col-sm-10 {
+    /*padding-left: 60px;*/
+    padding-left: 0%;
+    padding-right: 0px;
+  }
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+
+
+
+  @-webkit-keyframes logo {
+    0% { bottom: 65px; -webkit-transform: rotate(-4deg); }
+    50% { bottom: 57px; -webkit-transform: rotate(3deg); }
+    100% { bottom: 65px; -webkit-transform: rotate(-4deg); }
+  }
+
+  @-moz-keyframes logo {
+    0% { bottom: 65px; -moz-transform: rotate(-4deg); }
+    50% { bottom: 57px; -moz-transform: rotate(3deg); }
+    100% { bottom: 65px; -moz-transform: rotate(-4deg); }
+  }
+
+  @keyframes logo {
+    0% { bottom: 65px; transform: rotate(-4deg); }
+    50% { bottom: 57px; transform: rotate(3deg); }
+    100% { bottom: 65px; transform: rotate(-4deg); }
+  }
+
+  /*.flex-outer-wrap {
+   min-height: 96.7vh;
+   min-height: 96.5vh;
+  }*/
+
+} 
+
+
+
+
+
+
+/*@media (max-width: 1200px)*/
+/*aus bootstrap rüberkopiert 4883-4895*/
+
+/*um die Abstände zwischen den Reihen zu beeinflussen*/
+/* no-gutters Class Rules */
+
+/*um die Abstände zwischen den Reihen zu beeinflussen*/
+
+
+
+
+/*}  die Klammer war überflüssig und störend*/
+
+
+
+
+
+
+
+
+
+
+/*Auf Displays kleiner als 767 px soll Jumbotron bis auf eine schmale leere Textzeile nicht sichtbar sein*/
+/*Breakpoint 767px*/
+@media (max-width: 767px) {
+  .jumbotron {
+  /*padding: 0px 0px;*/
+  /*margin-bottom: 0px;*/
+  overflow-y: hidden;
+  /*background-color: #FD6066 !important;*/
+  /*border: 6px solid green;*/
+  }
+  /*Test: Einfärben des Bais div, um zu sehen, ob zwischen verschiedenen Breakpoint umgeschaltet wird*/
+  .didaktisch {
+      /*background-color: rgba(10, 10, 255, 0.3);*/
+  }
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+  .col-sm-10 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+
+/*aus bootstrap.css*/
+/*um den oberen Abstand der page-header zum jumbotron etwas zu verringern*/
+  .page-header {
+    margin: 22px 0 22px;
+  }
+
+
+  figure {
+   height: 60px;
+  }
+
+  figure .wellen {
+    width: 100%; height: 50px;
+    background-size: auto 60px;
+  }
+
+  figure .wellen_links {
+    width: 100%; height: 50px;
+    background-size: auto 60px;
+  }
+
+  figure img {
+    position: absolute;
+    width: 25px;
+    bottom: 27px;
+    left: 30px;
+  }
+
+
+  figure_logo img {
+    position: absolute;
+    bottom: 25px;
+    -webkit-animation: logo 4s infinite ease-in-out;
+    -moz-animation: logo 4s infinite ease-in-out;
+    animation: logo 4s infinite ease-in-out;
+  }
+
+
+  @-webkit-keyframes logo {
+    0% { bottom: 34px; -webkit-transform: rotate(-5deg); }
+    50% { bottom: 26px; -webkit-transform: rotate(4deg); }
+    100% { bottom: 34px; -webkit-transform: rotate(-5deg); }
+  }
+
+  @-moz-keyframes logo {
+    0% { bottom: 34px; -webkit-transform: rotate(-5deg); }
+    50% { bottom: 26px; -webkit-transform: rotate(4deg); }
+    100% { bottom: 34px; -webkit-transform: rotate(-5deg); }
+  }
+
+  @keyframes logo {
+    0% { bottom: 34px; -webkit-transform: rotate(-5deg); }
+    50% { bottom: 26px; -webkit-transform: rotate(4deg); }
+    100% { bottom: 34px; -webkit-transform: rotate(-5deg); }
+  }
+
+  /*Wellenbewegung halb so schnell wie in gross*/
+  figure .wellen {
+ /* position: absolute; bottom: 0px; left: 0px;
+  width: 100%; height: 100px;
+  background: 0, 0;
+  background-size: auto 120px;*/  
+  -webkit-animation: wellen 8s infinite linear;
+  -moz-animation: wellen 8s infinite linear;
+  animation: wellen 8s infinite linear;
+}
+
+figure .wellen_links {
+/*  position: absolute; bottom: 0px; left: 0px;
+  width: 100%; height: 100px;
+  background: 0, 0;
+  background-size: auto 120px;*/
+  -webkit-animation: wellen_links 8s infinite linear;
+  -moz-animation: wellen_links 8s infinite linear;
+  animation: wellen_links 8s infinite linear;
+}
+
+figure .wellen.vorne {
+  /*background-image: url(../_images/wellen_vorne.svg);*/
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  animation-duration: 8s;
+}
+
+figure .wellen_links.mitte {
+/*  background-image: url(../_images/wellen_mitte.svg);
+  opacity: 0.80;*/  
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  animation-duration: 8s;
+}
+
+figure .wellen.hinten {
+  /*background-image: url(../_images/wellen_hinten.svg);*/
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  animation-duration: 12s;
+}
+
+.flex-outer-wrap {
+  /* für iPad */
+  min-height: 95.7vh;
+  /*96.5vh*/
+  min-height: 96.5vh;
+  min-height: 97.5vh;
+}
+
+
+.copyright_dunkel {
+  padding-top: 0px !important;
+}
+
+p .hide_on_small_screen {
+  visibility: hidden;
+  display:none;
+  opacity:0;
+  color: red;
+  background-color: green;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+/*bis zu einer maximalen Breite von xx Pixeln soll das Jumbotron Banner kleiner sein als auf Desktops*/
+/*413px*/
+/*Breakpoint 413px*/
+/*iPhone 6 Plus hat 414 x 736*/
+/*@media (max-width: 413px) {*/
+@media (max-width: 415px) {
+  .jumbotron {
+  /*padding: 20px 5px;*/
+  /*margin-bottom: 20px;*/
+  overflow-y: hidden;
+  /*background-color: #FD6066 !important;*/
+  /*border: 9px solid red;*/
+  }
+  /*Test: Einfärben des Bais div, um zu sehen, ob zwischen verschiedenen Breakpoint umgeschaltet wird*/
+  .didaktisch {
+      /*background-color: rgba(200, 100, 200, 0.3);*/
+  }
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+  .col-sm-10 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+/*um den Abstand der Karten zum Rand links und rechts unterschiedlich zu beeinflussen*/
+
+.flex-outer-wrap {
+  min-height: 93.9vh; /* für iPhone 6 */
+  min-height: 94.4vh;
+}
+
+.copyright_dunkel {
+  /*padding-top: 0px !important;*/
+  background-color: #e0e0e0 !important;
+  /*background-color: red !important;*/
+}
+
+.copyright_hell {
+  padding-top: 0px !important;
+  /*background-color: red !important;*/
+}
+
+.hide_on_small_screen {
+  /*visibility: hidden;*/
+  display:none;
+  /*opacity:0;*/
+  color: blue;
+  background-color: green;
+  padding: 0;
+  /*margin: 0;*/
+}
+
+}
+
+
+
+/* Breakpoint 375px iPhone 6 */
+@media (max-width: 376px) {
+.flex-outer-wrap {
+  min-height: 94.0vh;
+}
+}
+
+/* Breakpoint 320px iPhone 5 */
+@media (max-width: 321px) {
+.flex-outer-wrap {
+  min-height: 92.9vh;
+}
+}
+
+
+
+
+
+
+/*Test*/
+/*.jumbotron { background-size: cover; background-position: center;  }*/
+/*Test*/
+
+
+
+/*Überschreibung der Werte aus bootstrap.css*/
+/*padding von body und jumbotron addieren sich*/
+/*hat die Menuleiste auch ein padding?*/
+/*.jumbotron {*/
+  /*padding: 15px 15px 0px 15px;*/
+  /*margin-bottom: 30px;*/
+  /*color: inherit;*/
+  /*inherit sorgt dafür, daß die Farben nicht mehr individuell eingestellt werden können*/
+  /*background-color: #c8d51e;*/
+  /*opacity: 0.5;*/
+  /*background-color: rgba(200, 213, 30, 0.5);*/
+  /*TEST um die Anführungszeichen nach unten zu begrenzen*/
+  /*overflow-y: hidden;*/
+/*}*/
+
+
+/*Design & Training Logo*/
+
+
+/* Generated by Font Squirrel (http:/www.fontsquirrel.com) on November 10, 2014 */
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../_fonts/icomoon.eot?-nt48tq');
+	src:url('../_fonts/icomoon.eot?#iefix-nt48tq') format('embedded-opentype'),
+		url('../_fonts/icomoon.woff?-nt48tq') format('woff'),
+		url('../_fonts/icomoon.ttf?-nt48tq') format('truetype'),
+		url('../_fonts/icomoon.svg?-nt48tq#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	font-size: 32px;	
+  /*Farbe des Logos*/
+  /*Gelb*/
+  /*color: #fab956;*/
+	
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+	content: "\e600";
+    /*color: #e1c024;*/
+    /*color: #fab956;*/
+    vertical-align: top;
+    line-height: 40%;
+    line-height: 44%;
+}
+
+
+
+/*damit das Logo bei hover die Farbe ändert*/
+.icon-logo:hover {
+  content: "\e600";
+    color: #FFFFFF !important;
+}
+
+
+/*Font Squirrel*/
+
+
+
+
+
+
+
+
+/*=========
+source-sans-pro
+=========*/
+
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../_fonts/dt-sans-semibold-webfont.eot');
+    src: url('../_fonts/dt-sans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-semibold-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-semibold-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-semibold-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../_fonts/dt-sans-regular-webfont.eot');
+    src: url('../_fonts/dt-sans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-regular-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-regular-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-regular-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proSBdIt';
+    src: url('../_fonts/dt-sans-semibolditalic-webfont.eot');
+    src: url('../_fonts/dt-sans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-semibolditalic-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-semibolditalic-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-semibolditalic-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-semibolditalic-webfont.svg#source_sans_proSBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proXLtIt';
+    src: url('../_fonts/dt-sans-extralightitalic-webfont.eot');
+    src: url('../_fonts/dt-sans-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-extralightitalic-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-extralightitalic-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-extralightitalic-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-extralightitalic-webfont.svg#source_sans_proXLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../_fonts/dt-sans-light-webfont.eot');
+    src: url('../_fonts/dt-sans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-light-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-light-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-light-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('../_fonts/dt-sans-italic-webfont.eot');
+    src: url('../_fonts/dt-sans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-italic-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-italic-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-italic-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-italic-webfont.svg#source_sans_proitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_prolight_italic';
+    src: url('../_fonts/dt-sans-lightitalic-webfont.eot');
+    src: url('../_fonts/dt-sans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-lightitalic-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-lightitalic-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-lightitalic-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-lightitalic-webfont.svg#source_sans_prolight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_proextralight';
+    src: url('../_fonts/dt-sans-extralight-webfont.eot');
+    src: url('../_fonts/dt-sans-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-extralight-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-extralight-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-extralight-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-extralight-webfont.svg#source_sans_proextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../_fonts/dt-sans-bold-webfont.eot');
+    src: url('../_fonts/dt-sans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-bold-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-bold-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-bold-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_problack_italic';
+    src: url('../_fonts/dt-sans-blackitalic-webfont.eot');
+    src: url('../_fonts/dt-sans-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-blackitalic-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-blackitalic-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-blackitalic-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-blackitalic-webfont.svg#source_sans_problack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_probold_italic';
+    src: url('../_fonts/dt-sans-bolditalic-webfont.eot');
+    src: url('../_fonts/dt-sans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-bolditalic-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-bolditalic-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-bolditalic-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-bolditalic-webfont.svg#source_sans_probold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_problack';
+    src: url('../_fonts/dt-sans-black-webfont.eot');
+    src: url('../_fonts/dt-sans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-sans-black-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-sans-black-webfont.woff') format('woff'),
+         url('../_fonts/dt-sans-black-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-sans-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*=========
+source-serif-pro
+=========*/
+
+@font-face {
+    font-family: 'source_serif_proregular';
+    src: url('../_fonts/dt-serif-regular-webfont.eot');
+    src: url('../_fonts/dt-serif-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-serif-regular-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-serif-regular-webfont.woff') format('woff'),
+         url('../_fonts/dt-serif-regular-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-serif-regular-webfont.svg#source_serif_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_serif_probold';
+    src: url('../_fonts/dt-serif-bold-webfont.eot');
+    src: url('../_fonts/dt-serif-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/dt-serif-bold-webfont.woff2') format('woff2'),
+         url('../_fonts/dt-serif-bold-webfont.woff') format('woff'),
+         url('../_fonts/dt-serif-bold-webfont.ttf') format('truetype'),
+         url('../_fonts/dt-serif-bold-webfont.svg#source_serif_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-control {
+  /*position: absolute;
+  top: 90%;
+  bottom: 90%;
+  left: 0;
+  width: 15%;*/
+  font-size: 20px;
+  color: #fff;
+  /*text-align: center;*/
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: 0.25;
+  /*border-radius:50%;*/
+  /*line-height: 150%;*/
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+}
+
+.carousel-indicators li {
+display: inline-block;
+width: 9px;
+height: 9px;
+margin: 10px;
+/*margin: 3%;*/
+margin-bottom: .1%;
+
+/*margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 10px;*/
+text-indent: -999px;
+cursor: pointer;
+background-color: black 9;
+background-color: transparent;
+border: 1px solid white;
+-webkit-border-radius: 1px;  /*Quadrate*/
+-moz-border-radius: 1px;  /*Quadrate*/
+border-radius: 1px;  /*Quadrate*/
+-webkit-box-shadow: 1px 1px 1px grey;
+-moz-box-shadow: 1px 1px 1px grey;
+box-shadow: 1px 1px 1px grey;
+
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.carousel-caption {
+right: 20%;
+left: 20%;
+/*padding-bottom: 44px;*/
+padding-bottom: 5%;
+/*padding-bottom: 44px;*/
+}
+
+.carousel-indicators .active {
+width: 9px;
+height: 9px;
+margin: 10px;
+/*margin: 3%;*/
+margin-bottom: .1%;
+background-color: white;
+}
+
+
+.carousel-control.left {
+  background-image: none;
+  }
+.carousel-control.right {
+ background-image: none;
+}
+
+/*Diese Prozentwerte stimmen nur bei einer bestimmten Browsergröße*/
+/*Es schein so zu sein, dass sich hier zwei Skalierungen addieren*/
+/*.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+position: absolute;
+top: 85%;
+z-index: 5;
+display: inline-block;
+}*/
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+body {
+  font-family: source_sans_proregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+
+  /*temp wegen css animation*/
+  /*background-color: #1bc4f4;*/
+
+  /*letter-spacing: 0.075em;*/
+  text-rendering: optimizeLegibility;
+}
+
+.navbar-nav > li > a {
+  /*font-family: source_sans_proregular;*/
+  /*font-family: source_serif_proregular;*/
+}
+
+.navbar-btn {
+	/*font-family: source_sans_probold;*/
+  /*font-family: source_sans_proregular;*/
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #e1c024;
+}
+
+.subhead_light {
+  font-family: source_sans_prolight, Helvetica, sans-serif;
+  /*source_sans_proextralight ist auf highres doch schon sehr zart*/
+  /*font-family: source_sans_proextralight, Helvetica, sans-serif;*/
+  letter-spacing: 0.04em;
+  /*color: #929F30;*/
+  /*color: #fedb32;*/
+  /*color: #548fc0;*/
+  /*color: #fff;*/
+  /*color: #000;*/
+}
+
+.head_bold {
+	/*font-family: source_sans_probold, Helvetica, sans-serif;*/
+  /*font-family: source_sans_prosemibold, Helvetica, sans-serif;*/
+  font-family: source_sans_proregular, Helvetica, sans-serif;
+  /*font-family: source_sans_prolight, Helvetica, sans-serif;*/
+  letter-spacing: -0.02em;
+  /*color: @brand-info;*/
+  /*color: red !important;*/
+}
+
+.head_bold_green {
+  color: #b1c03a !important;
+  color: #929F30;
+}
+
+.head_bold_yellow {
+  color: #fedb32;
+  color: #C8A234;
+}
+
+.head_bold_dark_grey {
+  /* 34% */
+  /*color: #575757 !important;*/
+  /* 40% */
+  color: #666666 !important;
+  color: #4C4C4C !important;  
+  color: #3F3F3F !important;
+
+}
+
+.head_bold_light_grey {
+  /* 66% */
+  /*color: #a8a8a8 !important;*/
+  /* 80% */
+  color: #CCCCCC !important;
+}
+
+.head_bold_hell {
+    /*color: #e7e7e7;*/
+    /*text-shadow: 0 2px 2px rgba(0, 0, 0, .1);*/
+    opacity: 0.15;
+    filter:Alpha(Opacity=15);
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*margin-left: 3px;*/
+    /*margin-left: 0.10em;*/
+}
+
+.head_bold_weiss {
+    color: #FFF;
+    /*opacity: 0.15;*/
+    /*filter:Alpha(Opacity=15);*/
+}
+
+.head_bold_grau {
+    color: #D3D3D3;
+    /*opacity: 0.15;*/
+    /*filter:Alpha(Opacity=15);*/
+}
+
+h1 .head_bold_hell {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    vertical-align: top;
+    /*margin-left: -0.04em;*/
+    margin-right: 0.02em;
+}
+
+.copyright {
+	font-family: 'source_sans_prolight', Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.copyright_hell {
+  font-family: 'source_sans_prolight', Helvetica, sans-serif;
+  font-size: 12px;
+  color: #7F7F7F;
+  /*Test*/
+  margin-top: 75px;
+  /*color: #000;*/
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  /*auf dunkelgrauem Balken*/
+
+  background-color: #343434;
+  /*background-color: red !important;*/
+  
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.copyright_dunkel {
+  font-family: 'source_sans_prolight', Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000;
+  /*Test*/
+  /*margin-top: 75px;*/
+  margin-top: 46px;
+  /*color: #fff;*/
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  /*auf hellgrauem Balken*/
+
+  /*background-color: #e0e0de;*/
+
+  /*background-color: #dededc;*/
+  background-color: #e0e0e0;
+  /*zum besseren Sehen während der Entwicklung*/
+  /*background-color: red;*/
+  padding-top: 3px;
+  padding-bottom: 0px;
+  /*vorher stand hier bei beiden 3*/
+}
+
+.copyright-zeichen{
+/*	font-family: 'source_sans_prolight', Helvetica, sans-serif;
+	font-size: 14px;
+  vertical-align: -13%;
+  opacity: 0.80;
+  filter:Alpha(Opacity=80);*/
+}
+
+.carousel {
+  padding-top: 1.4rem;
+  margin-top: 1.4rem;
+}
+
+
+/*.head_bold {
+			font-family: 'PT Sans Bold', Helvetica, sans-serif;
+}*/
+
+
+/*.head {
+			font-family: 'pt_sansregular', Times, serif;
+}
+
+.sub_head {
+			font-family: 'pt_serifregular', Times, serif;
+}*/
+
+/*.sub_head {
+	font-family: source_sans_proregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}*/

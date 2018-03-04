@@ -1,15 +1,18 @@
 var gulp = require('gulp'),
 watch = require('gulp-watch'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+php = require('gulp-connect-php');
 
 gulp.task('watch', function() {
 
 	console.log("Maru works on watch.");
 
-	browserSync.init({
-		notify: false,
-		proxy: "from-travel-site-to-design-training:91"
-	});
+		browserSync.init({
+			notify: false,
+			proxy: "from-travel-site-to-design-training"
+		});
+
+	gulp.start('php');
 
 	watch('./app/*.php', function() {
 		browserSync.reload();
@@ -26,6 +29,10 @@ gulp.task('watch', function() {
 		console.log("Maru works on scriptsRefresh.");
 	});
 	
+});
+
+gulp.task('php', function() {
+    php.server({ base: 'app', port: 3000, keepalive: true});
 });
 
 gulp.task('cssInject', ['styles'], function() {

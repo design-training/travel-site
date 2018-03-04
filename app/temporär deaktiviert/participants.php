@@ -4,17 +4,21 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
-  <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <title>design-training participants</title>
+  <meta name="description" content="design und training. Gute Gestaltung - Effizientes Training">
+  <meta name="author" content="Eberhard Stenzel">
 
-  <link rel="stylesheet" href="/assets/styles/styles-2927515c68.css"/>
+  <!-- build:css /assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
 
-  <script src="/assets/scripts/Vendor-e1e343afc7.js"></script>
+  <!-- build:js /assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 
 </head>
 <body>
-
+<!-- <div class="icon icon--star"></div> -->
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
@@ -197,7 +201,9 @@
     <div class="modal__close">X</div>
   </div>
 
-  <script src="/assets/scripts/App-fe8a16edf9.js"></script>
+  <!-- build:js /assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
 
 </body>
 </html>

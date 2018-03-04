@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-
+<!-- MARU -->
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
+  <title>Clear View Escapes to design-training</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <meta name="description" content="Our clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
-  <link rel="stylesheet" href="/assets/styles/styles-2927515c68.css"/>
+  <!-- build:css /assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
 
-  <script src="/assets/scripts/Vendor-e1e343afc7.js"></script>
+  <!-- <link rel="stylesheet" href="assets/styles/modules/_style-von-altem-design-invest.css"> -->
+  <!-- endbuild -->
+
+  <!-- build:js /assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 
 </head>
 <body>
+  <!-- TEST INCLUDE -->
 
-  <header class="site-header">
+  <!-- NAVBAR -->
+
+  <!-- BANNER -->
+  
+    <!-- <div class="icon icon--star"></div> -->
+    <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
         <!-- <img src="assets/images/icons/clear-view-escapes.svg"> -->
-        <div class="site-header__logo__graphic icon icon--clear-view-escapes">Clear View Escapes</div>
+        <!-- <img src="assets/images/icons/design-training-logo.svg"> -->
+        <div class="site-header__logo__graphic icon icon--design-training-logo">Clear View Escapes</div>
       </div>
 
       <div class="site-header__menu-icon">
@@ -32,9 +45,12 @@
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
-            <li><a href="#features" id="features-link">Features</a></li>
-            <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+            <li><a href="#our-beginning" id="our-beginning-link">Inhalte</a></li>
+            <li><a href="#features" id="features-link">Teilnehmer</a></li>
+            <li><a href="#testimonials" id="testimonials-link">Beispiele</a></li>
+            <li><a href="#trainer" id="trainer">Trainer</a></li>
+            <li><a href="#fragen" id="fragen">Fragen</a></li>
+            <li><a href="#kontakt" id="kontakt">Kontakt</a></li>
           </ul>
         </nav>
       </div>
@@ -197,7 +213,9 @@
     <div class="modal__close">X</div>
   </div>
 
-  <script src="/assets/scripts/App-fe8a16edf9.js"></script>
+  <!-- build:js /assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
 
 </body>
 </html>

@@ -1,17 +1,19 @@
 var gulp = require('gulp'),
 watch = require('gulp-watch'),
+connect = require('gulp-connect-php'),
 browserSync = require('browser-sync').create();
 
 gulp.task('watch', function() {
 
 	console.log("Maru works on watch.");
 
-	browserSync.init({
-		notify: false,
-		proxy: "from-travel-site-to-design-training:91"
-	});
+	connect.server({}, function (){
+    browserSync({
+      proxy: '192.168.178.30:91'
+    });
+  });
 
-	watch('./app/*.php', function() {
+	watch('**/*.php').on('change', function () {
 		browserSync.reload();
 		console.log("Maru works on browserSync.");
 	});

@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-
+<!-- MARU -->
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
+  <title>Clear View Escapes to design-training</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <meta name="description" content="Our clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
-  <link rel="stylesheet" href="/assets/styles/styles-2927515c68.css"/>
+  <!-- build:css /assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
 
-  <script src="/assets/scripts/Vendor-e1e343afc7.js"></script>
+  <link rel="stylesheet" href="assets/styles/modules/_style-von-altem-design-invest.css">
+  <!-- endbuild -->
+
+  <!-- build:js /assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 
 </head>
 <body>
+  <!-- TEST INCLUDE -->
+  <?php require 'klappt-der-test-include.php'; ?>
 
-  <header class="site-header">
+  <!-- NAVBAR -->
+  <!-- <?php require 'assets/_includes/navbar.php'; ?> -->
+
+  <!-- BANNER -->
+  <!-- <?php require 'assets/_includes/banner.php'; ?> -->
+
+    <!-- <div class="icon icon--star"></div> -->
+    <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
         <!-- <img src="assets/images/icons/clear-view-escapes.svg"> -->
@@ -32,9 +47,9 @@
         </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
-            <li><a href="#features" id="features-link">Features</a></li>
-            <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+            <li><a href="#our-beginning" id="our-beginning-link">Inhalte</a></li>
+            <li><a href="#features" id="features-link">Teilnehmer</a></li>
+            <li><a href="#testimonials" id="testimonials-link">Beispiele</a></li>
           </ul>
         </nav>
       </div>
@@ -52,7 +67,7 @@
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">Your clarity.</h1>
+        <h1 class="large-hero__title">our clarity.</h1>
         <h2 class="large-hero__subtitle">One trip away.</h2>
         <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
         <p><a href="#" class="btn btn__Orange btn__large open-modal">Get Started Today</a></p>
@@ -197,7 +212,21 @@
     <div class="modal__close">X</div>
   </div>
 
-  <script src="/assets/scripts/App-fe8a16edf9.js"></script>
+  <!-- build:js /assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
+
+
+
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://192.168.178.30:3002/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+
+
+
+
 
 </body>
 </html>

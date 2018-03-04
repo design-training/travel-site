@@ -8,10 +8,12 @@ gulp.task('watch', function() {
 
 	browserSync.init({
 		notify: false,
-		proxy: "from-travel-site-to-design-training:91"
+		server: {
+			baseDir: "app"
+		}
 	});
 
-	watch('./app/*.php', function() {
+	watch('./app/index.html', function() {
 		browserSync.reload();
 		console.log("Maru works on browserSync.");
 	});

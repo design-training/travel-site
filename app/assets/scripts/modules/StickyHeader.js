@@ -15,6 +15,7 @@ class StickyHeader {
 		// this.refreshWaypoints();
 	}
 
+	// Wenn die Funktion mit Waypoints refresh aktiviert wird, kommt ein Fehler
 	// refreshWaypoints() {
 	// 	this.lazyImages.load(function() {
 	// 		Waypoint.refreshAll();
@@ -24,7 +25,6 @@ class StickyHeader {
 	addSmoothScrolling() {
 		this.headerLinks.smoothScroll();
 	}
-
 
 	createHeaderWaypoint() {
 		var that = this;

@@ -11228,6 +11228,7 @@ var StickyHeader = function () {
 		// this.refreshWaypoints();
 	}
 
+	// Wenn die Funktion mit Waypoints refresh aktiviert wird, kommt ein Fehler
 	// refreshWaypoints() {
 	// 	this.lazyImages.load(function() {
 	// 		Waypoint.refreshAll();
