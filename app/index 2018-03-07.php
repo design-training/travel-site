@@ -6,7 +6,7 @@
   <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'> -->
 
   <!-- Meine Schrift -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
 
   <title>Clear View Escapes to design-training</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
@@ -27,7 +27,8 @@
   <!-- TEST INCLUDE -->
 
   <!-- NAVBAR -->
- 
+  <?php require 'assets/_includes/navbar.php'; ?>
+
   <!-- BANNER -->
   
     <!-- <div class="icon icon--star"></div> -->

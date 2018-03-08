@@ -1,6 +1,24 @@
-$mainBlue: #2f5572;
+/*$mainBlue: #2f5572;*/
+$mainBlue: #ff54a4;
 /*$mainOrange: #db6ac5;*/
 
 
 /*$mainOrange: #d59541;*/
 $mainOrange: #CCE53B;
+
+
+/*Meine Farben*/
+
+/*$MenuBackNotSelected: #8290e3;
+$MenuBackSelected: #579c69;
+$MenuTextNotSelected: #a4a4a4;
+$MenuTextSelected: #ffffff;*/
+
+
+/*$MenuBackNotSelected: #3a3a3a;*/
+$MenuBackNotSelected: #3f3f3f;
+/*$MenuBackSelected: #151515;*/
+$MenuBackSelected: #000000;
+/*$MenuTextNotSelected: #a4a4a4;*/
+$MenuTextNotSelected: #a8a8a8;
+$MenuTextSelected: #ffffff;
