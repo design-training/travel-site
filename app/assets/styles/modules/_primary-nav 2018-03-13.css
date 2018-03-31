@@ -74,9 +74,6 @@
 		background-color: $MenuBackNotSelected;
 		background-image: $Verlauf;
 
-		/*Test um die horizontale Lücke in FireFox wegzubekommen*/
-		margin-bottom: -1px;
-
 		/*Test*/
 		&:hover {
 			color: #ffffff;
@@ -101,7 +98,7 @@
 
 			/*von mir hinzugefügt*/
 			&:hover {
-				color: #ffffff;
+			color: #ffffff;
 			}
 
 			/*von mir hinzugefügt*/

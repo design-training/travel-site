@@ -15,13 +15,41 @@
   background-color: $MenuBackNotSelected;
   background-image: $Verlauf;
 
+  
+
+
+/*  &__sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }*/
+
+/*  &__diamant {
+    font-size: 0.75rem;
+    color: red;
+  }*/
+
+  &__diamantgruppe {
+    transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    color: green;
+  }
+
+
   &--is-expanded {
+    /*background-color: rgba($MenuBackNotSelected, .55);*/
     background-color: rgba($MenuBackNotSelected, 0.8);
     background-image: $Verlauf;
+    /*background-color: red;*/
   }
   
   @mixin atMedium {
     position: fixed;
+    /*background-color: rgba($MenuBackNotSelected, .3);*/
     background-color: $MenuBackNotSelected;
     background-image: $Verlauf;
 
@@ -48,9 +76,14 @@
     position: absolute;
     top: 0;
     left: 50%;
+    /*Logo soll auf kleinen Geräten genau zentriert sein*/
     transform: translateX(-50%);
+    /*transform: translateX(-50%) scale(.8);*/
     transition: transform .3s ease-out;
     transform-origin: 50% 0;
+    /*background-color: $mainBlue;*/
+    /*padding: 25px 36px;*/
+    /*transform: scale(.17);*/
 
     &:hover {
 			opacity: 1.0;
@@ -60,10 +93,24 @@
       left: auto;
       transform: translateX(0);
 
+
+
+
+
+
+    
+      
+
+
+
+
+
       .site-header--dark & {
+        /*Test, um zu sehen, ob die Menus dann unabhängig von der Scrollposition gleich bleiben*/
         background-color: $MenuBackNotSelected;
         background-image: $Verlauf;
         color: $MenuTextNotSelected;
+        /*transform: scale(.57);*/
       }
     }
   }
@@ -72,45 +119,54 @@
     text-indent: -9999px;
   }
 
+  /*von mir eingefügt*/
   &__mobile__graphic {
     text-indent: -9999px;
   }
+  /*von mir eingefügt*/
+
 
   &__menu-icon {
-    opacity: 0.44;
     width: 20px;
     height: 19px;
     position: absolute;
     z-index: 10;
     top: 10px;
     right: 10px;
-    top: 0px;
-    right: 24px;
-    transition: 0.3s ease-out;
 
-    &:hover {
-      opacity: 1.0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
     }
 
-    @mixin atMedium {
-      display: none;
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
     }
-  }
 
-  &__menu-icon-2 {
-    opacity: 0.44;
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    z-index: 13;
-    top: 10px;
-    right: 10px;
-    top: 0px;
-    right: 24px;
-    transition: 0.3s ease-out;
-
-    &:hover {
-      opacity: 1.0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
     }
 
     @mixin atMedium {
@@ -119,16 +175,17 @@
   }
 
   &__menu-icon--close-x {
-    {
-      transform: rotate(-45deg) translateX(-11.2px) translateY(3.6px) scaleX(1);
-      opacity: 1.0;
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
     }
-  }
 
-  &__menu-icon--close-x-2 {
-    {
-      transform: rotate(45deg) translateX(5.3px) translateY(-10.2px) scaleX(1);
-      opacity: 1.0;
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
   }
 
@@ -138,9 +195,17 @@
     transition: all .3s ease-out;
     position: relative;
     z-index: -10;
+    /*padding-top: 90px;*/
+    /*von mir geändert, um in der Mobil-Version den Abstand zwischen*/
+    /*Logo und Menu zu verringern*/
     padding-top: 30px;
+    /*bei einem Wert von 30px ist die Lücke geschlosssen*/
+    /*text-align: center;*/
     text-align: left;
- 
+    /*padding-left: 11%;*/
+    /*hier wird das Aussehen des eingeblendeten Menus*/
+    /*auf kleinen Geräten festgelegt*/
+
     @mixin atMedium {
       opacity: 1;
       z-index: 1;

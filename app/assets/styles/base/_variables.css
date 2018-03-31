@@ -1,13 +1,15 @@
 /*$mainBlue: #2f5572;*/
-$mainBlue: #ff54a4;
+/*$mainBlue: #ff54a4;*/
+$mainBlue: #365770;
 /*$mainOrange: #db6ac5;*/
-
-
 /*$mainOrange: #d59541;*/
-$mainOrange: #CCE53B;
+/*$mainOrange: #CCE53B;*/
+/*$mainOrange: #e2b21f;*/
+/*Gelbe Krokusse*/
+$mainOrange: #ffd300;
 
 
-/*Meine Farben*/
+/*Meine Test Farben*/
 
 /*$MenuBackNotSelected: #8290e3;
 $MenuBackSelected: #579c69;
@@ -15,10 +17,23 @@ $MenuTextNotSelected: #a4a4a4;
 $MenuTextSelected: #ffffff;*/
 
 
-/*$MenuBackNotSelected: #3a3a3a;*/
-$MenuBackNotSelected: #3f3f3f;
-/*$MenuBackSelected: #151515;*/
+/*Meine Graustufen*/
+
+$MenuBackNotSelected: #4d4d4d;
 $MenuBackSelected: #000000;
-/*$MenuTextNotSelected: #a4a4a4;*/
-$MenuTextNotSelected: #a8a8a8;
+$MenuTextNotSelected: #b3b3b3;
 $MenuTextSelected: #ffffff;
+
+/*$Verlauf: linear-gradient($MenuBackNotSelected, $MenuBackNotSelected, $MenuBackNotSelected, #3d3d3d);*/
+/*$Verlauf: linear-gradient($MenuBackNotSelected, $MenuBackNotSelected, $MenuBackNotSelected, red);*/
+/*$Verlauf: linear-gradient($MenuBackNotSelected 80%, red 100%);*/
+$Verlauf: linear-gradient($MenuBackNotSelected 70%, #424242 100%);
+
+
+
+/*$MenuBackNotSelected: #3f3f3f;
+$MenuBackSelected: #000000;
+$MenuTextNotSelected: #a8a8a8;
+$MenuTextSelected: #ffffff;*/
+
+

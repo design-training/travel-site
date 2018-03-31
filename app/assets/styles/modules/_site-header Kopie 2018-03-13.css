@@ -15,6 +15,11 @@
   background-color: $MenuBackNotSelected;
   background-image: $Verlauf;
 
+  &__diamantgruppe {
+    transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    color: green;
+  }
+
   &--is-expanded {
     background-color: rgba($MenuBackNotSelected, 0.8);
     background-image: $Verlauf;
@@ -77,7 +82,6 @@
   }
 
   &__menu-icon {
-    opacity: 0.44;
     width: 20px;
     height: 19px;
     position: absolute;
@@ -86,32 +90,6 @@
     right: 10px;
     top: 0px;
     right: 24px;
-    transition: 0.3s ease-out;
-
-    &:hover {
-      opacity: 1.0;
-    }
-
-    @mixin atMedium {
-      display: none;
-    }
-  }
-
-  &__menu-icon-2 {
-    opacity: 0.44;
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    z-index: 13;
-    top: 10px;
-    right: 10px;
-    top: 0px;
-    right: 24px;
-    transition: 0.3s ease-out;
-
-    &:hover {
-      opacity: 1.0;
-    }
 
     @mixin atMedium {
       display: none;
@@ -120,17 +98,15 @@
 
   &__menu-icon--close-x {
     {
-      transform: rotate(-45deg) translateX(-11.2px) translateY(3.6px) scaleX(1);
-      opacity: 1.0;
+      transform: rotate(-45deg) translateX(-10.8px) translateY(4.5px) scaleX(1);
     }
   }
 
-  &__menu-icon--close-x-2 {
+  /*&__menu-icon--close-x {
     {
-      transform: rotate(45deg) translateX(5.3px) translateY(-10.2px) scaleX(1);
-      opacity: 1.0;
+      transform: rotate(45deg) translateX(10.8px) translateY(-4.5px) scaleX(1);
     }
-  }
+  }*/
 
   &__menu-content {
     opacity: 0;

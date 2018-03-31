@@ -8,7 +8,7 @@
   <!-- Meine Schrift -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 
-  <title>design &#9670; training &#9670; Index</title>
+  <title>Clear View Escapes to design-training</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Our clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
@@ -23,13 +23,42 @@
   <!-- endbuild -->
 
 </head>
-<body id="index">
+<body>
+  <!-- TEST INCLUDE -->
 
   <!-- NAVBAR -->
-  <?php require 'assets/_includes/_navbar.php'; ?>
  
   <!-- BANNER -->
   
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+  
+        <div class="site-header__logo__graphic icon icon--design-training-logo">design training</div>
+      </div>
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn open-modal">Get in Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#our-beginning" id="our-beginning-link">Inhalte</a></li>
+            <li><a href="#features" id="features-link">Teilnehmer</a></li>
+            <li><a href="#testimonials" id="testimonials-link">Beispiele</a></li>
+            <li><a href="#trainer" id="trainer">Trainer</a></li>
+            <li><a href="#fragen" id="fragen">Fragen</a></li>
+            <li><a href="#kontakt" id="kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
   <div class="large-hero">
 
     <picture>
@@ -41,7 +70,7 @@
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">INDEX</h1>
+        <h1 class="large-hero__title">Your clarity.</h1>
         <h2 class="large-hero__subtitle">One trip away.</h2>
         <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
         <p><a href="#" class="btn btn__Orange btn__large open-modal">Get Started Today</a></p>

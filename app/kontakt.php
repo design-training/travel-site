@@ -8,7 +8,7 @@
   <!-- Meine Schrift -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 
-  <title>design &#9670; training &#9670; Index</title>
+  <title>design &#9670; training &#9670; Kontakt</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Our clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
@@ -23,7 +23,7 @@
   <!-- endbuild -->
 
 </head>
-<body id="index">
+<body id="kontakt">
 
   <!-- NAVBAR -->
   <?php require 'assets/_includes/_navbar.php'; ?>
@@ -41,7 +41,7 @@
 
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">INDEX</h1>
+        <h1 class="large-hero__title">KONTAKT</h1>
         <h2 class="large-hero__subtitle">One trip away.</h2>
         <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
         <p><a href="#" class="btn btn__Orange btn__large open-modal">Get Started Today</a></p>

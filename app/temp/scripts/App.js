@@ -11121,6 +11121,17 @@ new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
 var stickyHeader = new _StickyHeader2.default();
 var modal = new _Modal2.default();
 
+// function Person (fullName, favColor) {
+// 	this.name = fullName;
+// 	this.color = favColor;
+// 	this.greet = function() {
+// 		console.log("hello,my name is " + this.name + " and my favorite color is " + this.color + " .");
+// 	}
+// }
+
+// var john = new Person("John Doe", "blue");
+// john.greet();
+
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -11156,6 +11167,9 @@ var MobileMenu = function () {
 		// Better way to do it
 		this.siteHeader = (0, _jquery2.default)(".site-header");
 		this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
+		// von mir eingefügt
+		this.menuIcon2 = (0, _jquery2.default)(".site-header__menu-icon-2");
+		// von mir eingefügt
 		this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
 		this.events();
 	}
@@ -11164,6 +11178,11 @@ var MobileMenu = function () {
 		key: "events",
 		value: function events() {
 			this.menuIcon.click(this.toggleTheMenu.bind(this));
+			// von mir eingefügt
+			// Mag JavaScript keine menuIcon-2 ?
+			// Stört der Bindestrich ?
+			this.menuIcon2.click(this.toggleTheMenu.bind(this));
+			// von mir eingefügt
 			console.log(this);
 		}
 	}, {
@@ -11176,6 +11195,9 @@ var MobileMenu = function () {
 			this.menuContent.toggleClass("site-header__menu-content--is-visible");
 			this.siteHeader.toggleClass("site-header--is-expanded");
 			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+			// von mir eingefügt
+			this.menuIcon2.toggleClass("site-header__menu-icon--close-x-2");
+			// von mir eingefügt
 		}
 	}]);
 
@@ -11217,25 +11239,27 @@ var StickyHeader = function () {
 	function StickyHeader() {
 		_classCallCheck(this, StickyHeader);
 
-		// this.lazyImages = $(".lazyload");
+		this.lazyImages = (0, _jquery2.default)(".lazyload");
 		this.siteHeader = (0, _jquery2.default)(".site-header");
 		this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
 		this.createHeaderWaypoint();
+
 		this.pageSections = (0, _jquery2.default)(".page-section");
+
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
-		// this.refreshWaypoints();
+		this.refreshWaypoints();
 	}
 
-	// Wenn die Funktion mit Waypoints refresh aktiviert wird, kommt ein Fehler
-	// refreshWaypoints() {
-	// 	this.lazyImages.load(function() {
-	// 		Waypoint.refreshAll();
-	// 	});
-	// }
-
 	_createClass(StickyHeader, [{
+		key: 'refreshWaypoints',
+		value: function refreshWaypoints() {
+			this.lazyImages.on('load', function () {
+				Waypoint.refreshAll();
+			});
+		}
+	}, {
 		key: 'addSmoothScrolling',
 		value: function addSmoothScrolling() {
 			this.headerLinks.smoothScroll();
@@ -11265,9 +11289,9 @@ var StickyHeader = function () {
 					element: currentPageSection,
 					handler: function handler(direction) {
 						if (direction == "down") {
-							var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-							that.headerLinks.removeClass("is-current-link");
-							(0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+							// var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+							// that.headerLinks.removeClass("is-current-link");
+							// $(matchingHeaderLink).addClass("is-current-link");
 						}
 					},
 					offset: "18%"
@@ -11277,9 +11301,9 @@ var StickyHeader = function () {
 					element: currentPageSection,
 					handler: function handler(direction) {
 						if (direction == "up") {
-							var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-							that.headerLinks.removeClass("is-current-link");
-							(0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+							// var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+							// that.headerLinks.removeClass("is-current-link");
+							// $(matchingHeaderLink).addClass("is-current-link");
 						}
 					},
 					offset: "-40%"

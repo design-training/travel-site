@@ -4,11 +4,8 @@
 <svg version="1.1" id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="38px" height="38px" viewBox="0 0 38 38" enable-background="new 0 0 38 38" xml:space="preserve">
 <g>
-	<g>
-		<path fill="#FFFFFF" d="M26.192,11.64c-4.736-4.734-7.736-5.021-10.901-1.853l-4.761,4.755l5.097,5.095l3.209-3.209l-2.722-2.723
-			l2.868-2.866l8.894,8.9l-2.865,2.863l-2.725-2.725l-3.211,3.21l5.096,5.094l4.432-4.431C32.818,19.528,31.137,16.585,26.192,11.64
-			z"/>
-	</g>
-	<polygon fill="#FFFFFF" points="10.207,25.049 7,28.26 10.446,31.705 13.66,28.498 	"/>
+	<polygon fill="#FFFFFF" points="18.877,25.049 15.67,28.26 19.116,31.705 22.33,28.498 	"/>
+	<polygon fill="#FFFFFF" points="18.877,16.831 15.67,20.042 19.116,23.487 22.33,20.28 	"/>
+	<polygon fill="#FFFFFF" points="18.877,8.614 15.67,11.825 19.116,15.27 22.33,12.063 	"/>
 </g>
 </svg>

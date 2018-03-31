@@ -1,0 +1,178 @@
+.site-header {
+	/*padding: 10px 0;*/
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	transition: background-color 0.3s ease-out;
+
+	&--design-training-logo {
+		width: 24px;
+		height: 24px;
+	}
+
+
+	&--is-expanded {
+		/*background-color: rgba($mainBlue, 0.66);*/
+		/*background-color: $MenuBackNotSelected;*/
+		/*background-color: red;*/
+	}
+
+	@mixin atMedium {
+		position: fixed;
+		/*background-color: rgba($mainBlue, 0.3);*/
+		/*background-color: rgba($MenuBackNotSelected, 0.3);*/
+		/*background-color: $MenuBackNotSelected;*/
+		/*background-color: red;*/
+
+		&--dark {
+		/*background-color: rgba($mainBlue, 0.85);*/
+		/*background-color: rgba($MenuBackNotSelected, 0.9);*/
+		/*background-color: $MenuBackNotSelected;*/
+		/*background-color: red;*/
+
+		}
+	}
+
+	&__btn-container {
+		@mixin atMedium {
+			float: right;
+		}
+	}
+
+	&__logo {
+		/*width: 24px;
+		height: 24px;*/
+		/*Test*/
+		z-index: 15;
+		/*Test*/
+		position: absolute;
+		top: 0;
+		left: 50%;
+		/*transform: translate(-50%) scale(0.8);*/
+		/*Test*/
+		transform: translate(-50%) scale(0.435);
+		transition: transform 0.33s ease-out;
+		transform-origin: -50% 0;
+		/*background-color: $mainBlue;*/
+ 		/*padding: 25px 36px;*/
+		padding: 10px 10px;
+
+		@mixin atMedium {
+			/*left: auto;*/
+			left: 100px;
+			transform: translate(-50%) scale(0.435);
+			/*translate (0) schaltet die Vergrößerung ein*/
+			/*leider verschiebt sich dabei auch die Position an den linken Rand*/
+			/*transform: translate(0);*/
+			/*Test*/
+			/*Test*/
+
+			.site-header--dark  & {
+				transform: scale(0.435);
+			}
+		}
+	}
+
+	&__logo__graphic {
+		text-indent: -9999px;
+	}
+
+	&__menu-icon {
+		width: 20px;
+		height: 19px;
+		/*background-color: #FFF;*/
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 2;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+			transform-origin: 0 0;
+			transition: 0.3s ease-out;
+		}
+
+		&__middle {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+			transition: all 0.3s ease-out;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #FFF;
+			transform-origin: 0 100%;
+			transition: 0.3s ease-out;
+		}
+
+		@mixin atMedium {
+			display: none;
+		}
+	}
+
+	&__menu-icon--close-x {
+		&::before {
+			transform: rotate(45deg) scaleX(1.25);
+		}
+
+		.site-header__menu-icon__middle {
+			opacity: 0;
+			transform: scaleX(0);
+			transform-origin: 0 50%;
+		}
+
+		&::after {
+			transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+		}
+	}
+
+	&__wrapper {
+		opacity: 1;
+		background-color: blue;
+		position: fixed;
+		width: 100%;
+		height: 39px;
+	}
+
+	&__menu-content {
+		/*zum Test auskommentiert*/
+		opacity: 0;
+		transform: scale(1.2);
+		transition: all 0.3s ease-out;
+		position: relative;
+		/*zum Test auskommentiert*/
+		z-index: -10;
+		/*z-index: 3;*/
+		padding-top: 90px;
+		text-align: center;
+		/*background-color: red;*/
+
+		@mixin atMedium {
+			opacity: 1;
+			z-index: 1;
+			padding-top: 0;
+			transform: scale(1);
+		}
+
+		&--is-visible {
+			opacity: 1;
+			z-index: 1;
+			transform: scale(1);
+		}
+	}
+}

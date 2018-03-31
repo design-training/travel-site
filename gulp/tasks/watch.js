@@ -11,9 +11,14 @@ gulp.task('watch', function() {
 		proxy: "from-travel-site-to-design-training:91"
 	});
 
-	watch('./app/*.php', function() {
+	watch('./app/*.php', './app/assets/_includes/*.php', function() {
 		browserSync.reload();
 		console.log("Maru works on browserSync.");
+	});
+
+	watch('./app/assets/_includes/*.php', function() {
+		browserSync.reload();
+		console.log("Maru works on _includes browserSync.");
 	});
 
 	watch('./app/assets/styles/**/*.css', function() {

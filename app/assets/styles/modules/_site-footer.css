@@ -1,13 +1,21 @@
 .site-footer {
-	background-color: $mainBlue;
-	color: #FFF;
-	padding: 0.5rem 0;
+	background-color: $MenuBackNotSelected;
+	color: $MenuTextNotSelected;
+	/*von mir auskommentiert*/
+	/*padding: 0.5rem 0;*/
 	text-align: center;
+	/*von mir hinzugefügt, um die Schrift etwas kleiner zu machen*/
+	font-size: 0.9rem;
+	/*der footer soll am unteren Rand der Seite kleben*/
+/*	position: absolute;
+	width: 100%;
+	bottom: vh100;*/
+	/*bottom: 0;*/
 
 	&__text {
 		display: block;
 		margin-Bottom: 1rem;
-		font-weight: 200;
+		font-weight: 400;
 
 		@mixin atMedium {
 			display: inline;

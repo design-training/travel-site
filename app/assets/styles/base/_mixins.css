@@ -23,3 +23,32 @@
 		display: table;
 	}
 }
+
+
+/*meine mixins*/
+/*wie kann man die media queries in Abhängigkeit der Bildschirmbreite*/
+/*und nicht der absoluten Pixelanzahl steuern? vw? viewportwidth?*/
+
+/*@media only screen and (device-width:768px) and (orientation:portrait) {
+      nav { display:none;}*/
+
+/*resolution (min-resolution / max-resolution)
+Auflösung des Geräts in DPI (Dots per Inch) oder DPCM (Dots per Centimeter)*/      
+
+@define-mixin at320 {
+	@media (min-width: 320px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin at560 {
+	@media (min-width: 560px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin at1050 {
+	@media (min-width: 1050px) {
+		@mixin-content;
+	}
+}
