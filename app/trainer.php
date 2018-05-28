@@ -2,11 +2,22 @@
 <!-- MARU -->
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" /> -->
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+  <!-- TEST -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+  <!-- TEST -->
+
+
   <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'> -->
 
   <!-- Meine Schrift -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet"> -->
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 
   <title>design &#9670; training &#9670; Trainer</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
@@ -25,147 +36,79 @@
 </head>
 <body id="trainer">
 
-  <!-- NAVBAR -->
+  <!-- Muss ein Symbol in jeder Seite definiert werden auf der es benutzt wird? -->
+  <!-- Vermutlich ja -->
+  <!-- Vorrat an inline svg sprites -->
+  <svg style="display:none;">
+    <symbol id="sym-mouth">
+      <rect width="480" height="480"/>
+    </symbol>
+  </svg>
+
+  <!-- NAVBAR importiert -->
   <?php require 'assets/_includes/_navbar.php'; ?>
  
   <!-- BANNER -->
+
+  <!-- Muss ein Symbol in jeder Seite definiert werden auf der es benutzt wird? -->
+  <!-- Vermutlich ja -->
+  <!-- Vorrat an inline svg sprites -->
+  <svg style="display:none;">
+    <symbol id="sym-mouth">
+      <rect width="480" height="480"/>
+    </symbol>
+  </svg>
+
+
+  <!-- Karten -->
   
-  <div class="large-hero">
+  <div class="wrapper">
 
-    <picture>
-      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px")>
-      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px")>
-      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px")>
-      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="large-hero__image">
-    </picture>
+    <h3 class="headline">Nicht alle Trainer sind auch Designer.<br>Sie unterscheiden sich durch ihre Leidenschaften.<br>Training von:</h3>
 
-    <div class="large-hero__text-content">
-      <div class="wrapper">
-        <h1 class="large-hero__title">TRAINER</h1>
-        <h2 class="large-hero__subtitle">One trip away.</h2>
-        <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
-        <p><a href="#" class="btn btn__Orange btn__large open-modal">Get Started Today</a></p>
-      </div>
+    <!-- Das Raster für die Trainer-Karte muß abgeändert werden -->
+
+    <div class="Karten-Kiste-Grid-Trainer">
+
+        <!-- Karte 0 -->
+        <div class="Karte-Kiste-3D">
+          <div class="Einzel-Karte">
+            <div class="front-gemeinsam front0b "></div>
+            <div class="front-gemeinsam front0"></div>
+            <!-- Version mit svg inline sprite -->
+            <div class="user-mund">
+              <svg class="Mund-knapp" viewBox="0 0 480 480">
+                <use xlink:href="#sym-mouth"></use>
+              </svg>
+            </div>
+            <div class="back-gemeinsam back1">
+              <div id='b1' class="Logo EberhardStenzel"></div>
+            </div>
+              <h4 class="Karte-back-text-1">Designer <span class="diamant-small-grey-alpha"> &#9670; </span> Trainer</h4>
+              <!-- <h4 class="Karte-back-text-1">Designer &#9670; Trainer</h4> -->
+              <!-- <h4 class="Karte-back-text-1">Designer ◆ Trainer</h4> -->
+              <h3 class="Karte-back-text-2">Eberhard Stenzel</h3>
+          </div>
+        </div>
+
     </div>
+
+    <h3 class="headline-2">Viele Inhalte sind ähnlich.<br>Sie unterscheiden sich in der Art der Vermittlung.</h3>
+
   </div>
 
-  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
-    <div class="wrapper">
-      <h2 class="headline headline--centered headline--light headline--b-margin-small">The first trip we planned <strong>was our own.</strong></h2>
-      <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
-      
-      <div class="wrapper wrapper--medium wrapper--b-margin">
-        <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
-      </div>
 
-    <div class="row row--gutters">
-      <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
-        <picture>
-          <source sizes="404px" data-srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w" media="(min-width: 1020px)">
-          <source sizes="320px" data-srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w" media="(min-width: 800px)">
-          <img class="lazyload" data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
-        </picture>
-      </div>
-    <div class="row__medium-8 row__medium-8--smaller">
-      <h2 class="headline headline--no-t-margin">Here&rsquo;s how we got started&hellip;</h2>
-     <div class="generic-content-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
-      </div> 
-    </div>
-    </div>
-    </div>
-  </div>
 
-  <div id="features" class="page-section page-section--blue" data-matching-link="#features-link">
-    <div class="wrapper">
-      
-      <h2 class="section-title"><span class="icon icon--star section-title__icon"></span> Our <strong>Features</strong></h2>
-    
-      <div class="row row--gutters-large generic-content-container">
 
-        <div class="row__medium-6">
+  
 
-          <div class="feature-item">
-            <span class="icon icon--rain feature-item__icon"></span>
-            <h3 class="feature-item__title">
-            We&rsquo;ll Watch the Weather</h3>
-            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
-          </div>
+   
 
-          <div class="feature-item">
-            <span class="icon icon--globe feature-item__icon"></span>
-            <h3 class="feature-item__title">Global Guides</h3>
-            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
-          </div>
-        </div>
-         
-        <div class="row__medium-6">
 
-          <div class="feature-item">
-            <span class="icon icon--wifi feature-item__icon"></span>
-            <h3 class="feature-item__title">Wi-Fi Waypoints</h3>
-            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
-          </div>
-
-          <div class="feature-item">
-            <span class="icon icon--fire feature-item__icon"></span>
-            <h3 class="feature-item__title">Survival Kit</h3>
-            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
-          </div>
-        </div>
-      </div> 
-    </div>
-  </div>
-
-  <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials lazyload" data-matching-link="#testimonials-link">
-    <div class="wrapper wrapper--no-padding-until-large">
-     
-      <h2 class="section-title section-title--blue"><span class="icon icon--comment section-title__icon"></span>Real <strong>Testimonials</strong></h2>
-
-    <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
-
-      <div class="row__large-4">
-        <div class="testimonial">
-          <div class="testimonial__photo">
-            <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
-          </div>
-          <h3 class="testimonial__title">Jane Doe</h3>
-          <h4 class="testimonial__subtitle">9 Time Escaper</h4>
-          <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-        </div>
-      </div>
-
-      <div class="row__large-4">
-        <div class="testimonial">
-          <div class="testimonial__photo">
-            <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="John Smith">
-          </div>
-          <h3 class="testimonial__title">John Smith</h3>
-          <h4 class="testimonial__subtitle">4 Time Escaper</h4>
-          <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-        </div>
-      </div>
-
-      <div class="row__large-4">
-        <div class="testimonial testimonial--last">
-          <div class="testimonial__photo">
-            <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="Cat McKitty">
-          </div>
-          <h3 class="testimonial__title">Cat McFurry</h3>
-          <h4 class="testimonial__subtitle">6 Time Escaper</h3>
-          <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
-        </div>
-      </div>
-      
-      </div>
-    </div>
-  </div>
-
+ 
   <footer class="site-footer">
     <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn__Orange open-modal">Get in Touch</a></p>
+      <p><span class="site-footer__text">copyright &copy; 2018 design training</p>
     </div>
   </footer>
 

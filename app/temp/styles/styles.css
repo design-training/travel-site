@@ -463,6 +463,10 @@ template {
 
 /*Gelbe Krokusse*/
 
+/*Perspektive*/
+
+/*Zeit*/
+
 /*Meine Test Farben*/
 
 /*$MenuBackNotSelected: #8290e3;
@@ -633,13 +637,19 @@ a {
 	max-width: 1236px;
 }
 
+/*Test*/
+
 .wrapper--medium {
 	max-width: 976px;
 	}
 
+/*max-height: 100%;*/
+
 .wrapper--narrow {
 		max-width: 470px;
 	}
+
+/*Test*/
 
 .wrapper--no-padding-until-medium {
 		padding-left: 0;
@@ -681,6 +691,10 @@ a {
 .wrapper .wrapper {
 		padding-left: 0;
 		padding-right:0;
+
+		/*Test*/
+		/*height: 100%;*/
+		/*Test*/
 	}
 
 .page-section {
@@ -1229,11 +1243,11 @@ a {
   position: absolute;
   width: 100%;
   /*von mir hinzugefügt*/
-  height: 40px;
+  height: 43px;
   /*von mir hinzugefügt*/
   z-index: 2;
-  -webkit-transition: background-color .3s ease-out;
-  transition: background-color .3s ease-out;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
   /*Menuleiste soll auch auf kleinen Geräten sichbar bleiben*/
   /*allerdings nicht so riesig*/
   /*deswegen die height Angabe*/
@@ -1244,11 +1258,18 @@ a {
   background-image: linear-gradient(#4d4d4d 70%, #424242 100%);
 }
 
+/*Test*/
+
 .site-header--is-expanded {
     background-color: rgba(77,77,77, 0.8);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #4d4d4d), to(#424242));
     background-image: linear-gradient(#4d4d4d 70%, #424242 100%);
+    /*Test*/
+    /*.side-header__wrapper {max-height: auto;}*/
+    /*Test*/
   }
+
+/*.side-header__wrapper {max-height: 100%;}*/
 
 @media (min-width: 800px) {
 
@@ -1265,6 +1286,8 @@ a {
       /*background-image: $Verlauf;*/
     }
 	}
+
+/*Test*/
 
 .site-header__btn-container {
     visibility: hidden;
@@ -1387,11 +1410,32 @@ a {
     }
 
 .site-header__menu-content {
-    opacity: 0;
+    /*Menu soll von oben reinkommen*/
+    /*transform: translateY(-55px);*/
+    /*opacity: 0.5;*/
+    /*Menu soll von oben reinkommen*/
+
+
+
+    /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+    height: 0px;
+    /*Weclhe Rolle spielt hier die Zahl für die Höhe?*/
+    /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+
+
+
+    opacity: 0.0;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+
+    /*meine Versuche*/
+    -webkit-transform: translateY(-155px);
+            transform: translateY(-155px);
+    /*meine Versuche*/
+
+    -webkit-transition: all 0.3s ease-out;
+
+    transition: all 0.3s ease-out;
     position: relative;
     z-index: -10;
     padding-top: 30px;
@@ -1410,12 +1454,25 @@ a {
 	}
 
 .site-header__menu-content--is-visible {
+      /*Menu soll von oben reinkommen*/
+      /*transform: translateY(155px);*/
+      /*Menu soll von oben reinkommen*/
+
       opacity: 1;
       z-index: 1;
       -webkit-transform: scale(1);
               transform: scale(1);
       /*Test*/
       width: 100%;
+      
+
+
+      /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+      height: 100%;
+      /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+
+
+
     }
 
 /*Testweise hineinkopiert*/
@@ -1435,7 +1492,7 @@ a {
 /*Testweise hineinkopiert*/
 
 .primary-nav {
-		padding-top: 10px;
+		padding-top: 12px;
 
 }
 
@@ -1472,9 +1529,15 @@ a {
 		transform: translateX(-5.5%);*/
 		/*width: 134%;
 		transform: translateX(-13%);*/
+
+		/*width: 116%;
+		transform: translateX(-18px);*/
+		
+		/*Menu soll von oben nach unten reinkommen*/
 		width: 116%;
 		-webkit-transform: translateX(-18px);
 		        transform: translateX(-18px);
+
 		/*padding-right: 0px;*/
 		opacity: 1;
 	}
@@ -1508,7 +1571,7 @@ a {
 		text-decoration: none;
 		display: block;
 		/*padding: 5px 8px;*/
-		padding: 10px 14px;
+		padding: 12px 14px;
 		/*Versuch die Schriftgröße in der Mobil-Version anzupassen*/
 		font-size: 1.1rem;
 		/*width: 110%;*/
@@ -1518,6 +1581,7 @@ a {
 		background-image: linear-gradient(#4d4d4d 70%, #424242 100%);
 
 		/*Test um die horizontale Lücke in FireFox wegzubekommen*/
+		/*funktioniert*/
 		margin-bottom: -1px;
 
 	}
@@ -1538,7 +1602,7 @@ a {
 
 .primary-nav a {
 			font-size: 1.1rem;
-			padding: 10px 14px;
+			padding: 12px 14px;
 			background-color: #4d4d4d
 			/*background-color: green;*/
 
@@ -1552,7 +1616,7 @@ a {
 			.primary-nav a.is-current-link {
 				color: #ffffff;
 				background-color: #000000;
-				/*padding: 10px 14px;*/
+				/*padding: 12px 14px;*/
 			}
 			.primary-nav a:hover {
 				color: #ffffff;
@@ -1662,62 +1726,514 @@ a {
 			        transform: translate(-50%, -50%);
 		}
 
-.card-container {
-	padding-top: 0px;
-	padding-bottom: 0px;
+/*Trainer*/
+
+.diamant-small-grey-alpha {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.7em;
+  vertical-align: 0.1em;
 }
 
-.card {
+/*Trainer*/
+
+.Karte-Kiste-3D {
+	/*background-color: darkgrey;*/
+	border-radius: 10px;
+
+	-webkit-perspective-origin: 50% 50%;
+
+	        perspective-origin: 50% 50%;
+	-webkit-perspective: 600px;
+	        perspective: 600px;
+
+	background-image: url('/assets/images/sprites/Door_Open_4.svg');
+}
+
+.Karte-Kiste-3D:hover .Einzel-Karte {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+
+.Karte-Kiste-3D:hover .Logo {-webkit-transform: rotateZ(-45deg);transform: rotateZ(-45deg);}
+
+.Karte-Kiste-3D:hover .Logo {-webkit-filter: blur(0px);filter: blur(0px);}
+
+/*Die Texte auf der Kartenrückseite sollen sanft eingeblendet werden*/
+
+.Karte-Kiste-3D:hover .Karte-back-text-1 {opacity: 1.0;}
+
+.Karte-Kiste-3D:hover .Karte-back-text-1 {-webkit-transition: opacity 4s ease;transition: opacity 4s ease;}
+
+/*Die Texte auf der Kartenrückseite sollen sanft eingeblendet werden*/
+
+.Karte-Kiste-3D:hover .Karte-back-text-2 {opacity: 1.0;}
+
+/*&:hover .Karte-back-text-1 {transform: translateX(-30px);}*/
+
+.Karte-Kiste-3D:hover .Karte-back-text-2 {-webkit-transition: opacity 2s ease;transition: opacity 2s ease;}
+
+/*Trainer*/
+
+.Karte-Kiste-3D:hover .front0 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+/*&:hover .Karte-back-text-1 {transform: rotateZ(-30deg);}*/
+
+.Karte-Kiste-3D:hover .front0b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+/*Trainer*/
+
+.Karte-Kiste-3D:hover .front1 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front1b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front2 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front2b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front3 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front3b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front4 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front4b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front5 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front5b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front6 {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front6b {-webkit-transition: opacity 0.7s ease;transition: opacity 0.7s ease;}
+
+.Karte-Kiste-3D:hover .front1  {opacity: 0.0;}
+
+.Karte-Kiste-3D:hover .front1b {opacity: 1.0;}
+
+.Karte-Kiste-3D:hover .front2  {opacity: 0.0;}
+
+.Karte-Kiste-3D:hover .front2b {opacity: 1.0;}
+
+.Karte-Kiste-3D:hover .front3  {opacity: 0.0;}
+
+.Karte-Kiste-3D:hover .front3b {opacity: 1.0;}
+
+.Karte-Kiste-3D:hover .front4  {opacity: 0.0;}
+
+.Karte-Kiste-3D:hover .front4b {opacity: 1.0;}
+
+.Karte-Kiste-3D:hover .front5  {opacity: 0.0;}
+
+.Karte-Kiste-3D:hover .front5b {opacity: 1.0;}
+
+.Karte-Kiste-3D:hover .front6  {opacity: 0.0;}
+
+.Karte-Kiste-3D:hover .front6b {opacity: 1.0;}
+
+.sensor {
+	width: 156px;
+	height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(200, 20, 20, 0.5);
+
+	/*&:hover .sensor {background-color: rgba(20, 200, 20, 0.5);}*/
+}
+
+.sensor:hover {
+	background-color: rgba(20, 200, 20, 0.5);
+}
+
+/*.Einzel-Karte:hover .Einzel-Karte { transform: rotateY(180deg);}*/
+
+.Einzel-Karte {
+	/*background-color: green;*/
+	-webkit-transition: -webkit-transform 1.0s ease-in-out;
+	transition: -webkit-transform 1.0s ease-in-out;
+	transition: transform 1.0s ease-in-out;
+	transition: transform 1.0s ease-in-out, -webkit-transform 1.0s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+
+	width: 156px;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+}
+
+.front-gemeinsam {
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	z-index: 2;
+
+	width: 156px;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: #fff;
+	opacity: 1;
+	position: absolute;
+
+	/*&:hover .Einzel-Karte {transform: rotateY(180deg);}*/
+}
+
+/*Trainer*/
+
+.front0 {
+	background-image: url('/assets/images/sprites/Mensch0.svg');
+}
+
+.front0b {
+	background-image: url('/assets/images/sprites/Mensch0b.svg');
+}
+
+/*Trainer*/
+
+.front1 {
+	/*background-color: #f4c6ce;*/
+	background-image: url('/assets/images/sprites/Mensch1.svg');
+}
+
+.front1b {
+	background-image: url('/assets/images/sprites/Mensch1b.svg');
+}
+
+.front2 {
+	/*background-color: #a57a8d;*/
+	background-image: url('/assets/images/sprites/Mensch2.svg');
+}
+
+.front2b {
+	background-image: url('/assets/images/sprites/Mensch2b.svg');
+}
+
+.front3 {
+	/*background-color: #bfbfbc;*/
+	background-image: url('/assets/images/sprites/Mensch3.svg');
+}
+
+.front3b {
+	background-image: url('/assets/images/sprites/Mensch3b.svg');
+}
+
+.front4 {
+	/*background-color: #778da2;*/
+	background-image: url('/assets/images/sprites/Mensch4.svg');
+}
+
+.front4b {
+	background-image: url('/assets/images/sprites/Mensch4b.svg');
+}
+
+.front5 {
+	/*background-color: #e59295;*/
+	background-image: url('/assets/images/sprites/Mensch5.svg');
+}
+
+.front5b {
+	background-image: url('/assets/images/sprites/Mensch5b.svg');
+}
+
+.front6 {
+	/*background-color: #899997;*/
+	background-image: url('/assets/images/sprites/Mensch6.svg');
+}
+
+.front6b {
+	background-image: url('/assets/images/sprites/Mensch6b.svg');
+}
+
+.user-mund {
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+  position: absolute;
+	top: 7.2%;
+  left: 17.3%;
+  /*die Änderung von width: 100% auf width: 70% verschiebt den Mund*/
+  width: 70%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 2;
+}
+
+.user-mund-zwei {
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+  /*für den Kerl mit zwei Hosen*/
+  position: absolute;
+  top: 7.2%;
+  left: 3.0%;
+  width: 70%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 2;
+ }
+
+.Mund-knapp {
+  -webkit-transition: -webkit-transform 1.0s;
+  transition: -webkit-transform 1.0s;
+  transition: transform 1.0s;
+  transition: transform 1.0s, -webkit-transform 1.0s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform: scale(0.005, 0.005);
+          transform: scale(0.005, 0.005);
+  opacity: 1.0;
+  -webkit-transition: opacity 1.0s ease-in-out;
+  transition: opacity 1.0s ease-in-out;
+  -webkit-transition: all 1.0s;
+  transition: all 1.0s;
+  -webkit-transform: all 1.0s;
+          transform: all 1.0s;
+  fill: #4a6c8d;
+  border-radius: 10px;
+  /*fill: red;*/
+  z-index: 1;
+}
+
+.Karte-Kiste-3D:hover .Mund-knapp {
+  opacity: 0.0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  fill: #fff;
+}
+
+.back-gemeinsam {
+	/*backface-visibility: hidden;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+
+	width: 156px;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	border: 1px solid #fff;
+}
+
+.back-gemeinsam:hover .Einzel-Karte {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+
+.Karte-back-text-1 {
+	/*transform: translateX(30px);*/
+	/*transform: rotateZ(30deg);*/
+	/*z-index: 30;*/
+	/*backface-visibility: hidden;*/
+	position: absolute;
+	top: 140px;
+	text-align: center;
+	left: 10px;
+	right: 10px;
+	z-index: 1;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	/*color: $mainOrange;*/
+	color: #fff;
+	/*opacity: 0.75;*/
+	opacity:0;
+	-webkit-transition: 1.4s;
+	transition: 1.4s;
+
+	font-size: 15px;
+	font-weight: 300;
+}
+
+@media (min-width: 560px) {
+
+.Karte-back-text-1 {
+		font-size: 16px
+}
+	}
+
+@media (min-width: 1050px) {
+
+.Karte-back-text-1 {
+		font-size: 17px
+}
+	}
+
+.Karte-back-text-2 {
+	/*z-index: 3;*/
+	/*backface-visibility: hidden;*/
+	position: absolute;
+	top: 160px;
+	text-align: center;
+	left: 10px;
+	right: 10px;
+	z-index: 1;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	color: #fff;
+
+	font-size: 21px;
+	font-weight: 300;
+
+	/*opacity: 0.90;*/
+	opacity:0;
+	-webkit-transition: 1.0s;
+	transition: 1.0s;
+}
+
+@media (min-width: 560px) {
+
+.Karte-back-text-2 {
+		font-size: 22px;
+		top: 162px
+}
+	}
+
+@media (min-width: 1050px) {
+
+.Karte-back-text-2 {
+		font-size: 23px;
+		top: 164px
+}
+	}
+
+.Logo {
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 35px;
+	left: 35px;
+	right: 35px;
+	z-index: 2;
+
+	-webkit-filter: blur(1.0px);
+
+	        filter: blur(1.0px);
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
+
+	background-color: #fff;
+
+	border-radius: 5px;
+	-webkit-transition: -webkit-transform 2800ms cubic-bezier(.29,.44,0,1.53);
+	transition: -webkit-transform 2800ms cubic-bezier(.29,.44,0,1.53);
+	transition: transform 2800ms cubic-bezier(.29,.44,0,1.53);
+	transition: transform 2800ms cubic-bezier(.29,.44,0,1.53), -webkit-transform 2800ms cubic-bezier(.29,.44,0,1.53);
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+
+	/*box-shadow: 0.35rem 0.35rem 0.35rem rgba(68,68,68,0.4);*/
+	-webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(55,55,55,0.8);
+	        box-shadow: 0.25rem 0.25rem 0.25rem rgba(55,55,55,0.8);
+}
+
+.Firmen {
+	background-image: url('/assets/images/sprites/Logo-Siemens.svg');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Universitaeten {
+	background-image: url('/assets/images/sprites/Logo-UdK-Berlin.svg');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Behoerden {
+	background-image: url('/assets/images/sprites/Logo-Marine.svg');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Bildungstraeger {
+	background-image: url('/assets/images/sprites/Logo-itw.svg');
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Hochschulen {
+	background-image: url('/assets/images/sprites/Logo-FH-Hannover.svg');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Institutionen {
+	background-image: url('/assets/images/sprites/Logo-NATO.svg');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.EberhardStenzel {
+	background-image: url('/assets/images/sprites/Logo-es.svg');
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.back1 {
+	background-image: url('/assets/images/sprites/dummy_back_001.svg');
+}
+
+.back2 {
+	background-image: url('/assets/images/sprites/dummy_back_002.svg');
+}
+
+.back3 {
+	background-image: url('/assets/images/sprites/dummy_back_003.svg');
+}
+
+.back4 {
+	background-image: url('/assets/images/sprites/dummy_back_004.svg');
+}
+
+.back5 {
+	background-image: url('/assets/images/sprites/dummy_back_005.svg');
+}
+
+.back6 {
+	background-image: url('/assets/images/sprites/dummy_back_006.svg');
+}
+
+/*:root {
+	--Farbe: red;
+}*/
+
+.Karten-Kiste-Grid {
+	/*background-color: lightgrey;*/
+	/*background-color: --Farbe;*/
+
 	display: grid;
 	grid-gap: 15px;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	min-width: 100%;
-	min-height: 100%;
+	/*min-width: 100%;*/
+	/*min-height: 100%;*/
+	min-width: 156px;
+	min-height: 250px;
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 10px;
 
 }
 
-.card__num1 {
-		background-color: #f4c6ce;
-		background-image: url('/assets/images/sprites/Mensch1.svg');
-	}
-
-.card__num2 {
-		background-color: #a57a8d;
-		background-image: url('/assets/images/sprites/Mensch2.svg');
-	}
-
-.card__num3 {
-		background-color: #bfbfbc;
-		background-image: url('/assets/images/sprites/Mensch3.svg');
-	}
-
-.card__num4 {
-		background-color: #778da2;
-		background-image: url('/assets/images/sprites/Mensch4.svg');
-	}
-
-.card__num5 {
-		background-color: #e59295;
-		background-image: url('/assets/images/sprites/Mensch5.svg');
-	}
-
-.card__num6 {
-		background-color: #899997;
-		background-image: url('/assets/images/sprites/Mensch6.svg');
-	}
-
 @media (min-width: 320px) {
 
-.card {
-		/*grid-template-columns: 1fr 1fr;*/
+.Karten-Kiste-Grid {
 		grid-template-columns: 156px 156px;
-		/*grid-template-columns: repeat(auto-fit, minmax(156px, 156px));*/
-		/*grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));*/
 		grid-template-rows: 250px 250px 250px
 
 }
@@ -1725,11 +2241,8 @@ a {
 
 @media (min-width: 560px) {
 
-.card {
-  	/*grid-template-columns: 1fr 1fr 1fr;*/
+.Karten-Kiste-Grid {
   	grid-template-columns: 156px 156px 156px;
-		/*grid-template-columns: repeat(auto-fit, minmax(156px, 256px));*/
-		/*grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));*/
 		grid-template-rows: 250px 250px
 
 }
@@ -1737,18 +2250,63 @@ a {
 
 @media (min-width: 1050px) {
 
-.card {
-   	/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+.Karten-Kiste-Grid {
    	grid-template-columns: 156px 156px 156px 156px 156px 156px;
- 		/*grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));*/
  		grid-template-rows: 250px
 
 }
 	}
 
+/*Trainer*/
+
+.Karten-Kiste-Grid-Trainer {
+
+	/*background-color: lightgrey;*/
+	display: grid;
+	grid-gap: 15px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-width: 156px;
+	min-height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+}
+
+@media (min-width: 320px) {
+
+.Karten-Kiste-Grid-Trainer {
+		grid-template-columns: 156px;
+		grid-template-rows: 250px
+
+}
+	}
+
+@media (min-width: 560px) {
+
+.Karten-Kiste-Grid-Trainer {
+  	grid-template-columns: 156px;
+		grid-template-rows: 250px
+
+}
+	}
+
+@media (min-width: 1050px) {
+
+.Karten-Kiste-Grid-Trainer {
+   	grid-template-columns: 156px;
+ 		grid-template-rows: 250px
+
+}
+	}
+
+/*Trainer*/
+
 .headline {
 	padding-top: 60px;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 300;
 	text-align: center;
 }
@@ -1756,21 +2314,21 @@ a {
 @media (min-width: 560px) {
 
 .headline {
-		font-size: 16px
+		font-size: 20px
 }
 	}
 
 @media (min-width: 1050px) {
 
 .headline {
-		font-size: 20px
+		font-size: 24px
 }
 	}
 
 .headline-2 {
 	padding-top: 0px;
 	padding-bottom: 22px;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 300;
 	text-align: center;
 }
@@ -1778,14 +2336,14 @@ a {
 @media (min-width: 560px) {
 
 .headline-2 {
-		font-size: 16px
+		font-size: 20px
 }
 	}
 
 @media (min-width: 1050px) {
 
 .headline-2 {
-		font-size: 20px
+		font-size: 24px
 }
 	}
 

@@ -1,0 +1,362 @@
+
+/*warum sind die Männchen nicht sichtbar?*/
+/*Sind die größenangaben und Positionsangaben in der falschen Klasse?*/
+/*da ja jetzt mit einzelnen Klassen gearbeitet wird */
+/*.body { -webkit-perspective: 1000; -webkit-perspective-origin: 420px 0px;*/
+/*background: black; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }*/
+
+
+.Karte-Kiste-3D {
+	/*background-color: darkgrey;*/
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+
+/*.kulturbanause-logo:hover .turnaround { transform: rotateY(180deg);}*/
+.Karte-Kiste-3D:hover .turnaround { transform: rotateY(180deg);}
+
+.turnaround {
+	transition: transform 1.0s ease-in-out;
+	transform-style: preserve-3d;
+
+	min-width: 156px;
+	min-height: 250px;
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	border-radius: 10px;
+
+	/*background-color: yellow;*/
+	/*background-image: url('/assets/images/sprites/Mensch1.svg');*/
+}
+
+.front1 {
+	backface-visibility: hidden;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	z-index: 2;
+
+	min-width: 156px;
+	min-height: 250px;
+	/*background-repeat: no-repeat;*/
+	background-position: center;
+	border-radius: 10px;
+
+	/*background-color: #f4c6ce;*/
+	/*background-color: red;*/
+	background-image: url('/assets/images/sprites/Mensch1.svg');
+
+	/*transition: transform 1.0s ease-in-out;*/
+	/*&:hover { transform: rotateY( 180deg ); }*/
+}
+
+.back1 {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transform: rotateY(180deg);
+
+	min-width: 156px;
+	min-height: 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: blue;
+	background-image: url('/assets/images/sprites/dummy_back_001.svg');
+
+	/*transition: transform 1.0s ease-in-out;*/
+	/*&:hover { transform: rotateY( 180deg ); }*/
+}
+
+
+
+
+
+
+
+
+/*.Karte, .front1, .back1 {
+	transition: transform 1.0s ease-in-out;
+	transform-style: preserve-3d;
+}*/
+
+/*.Karte:hover .back1 {
+	transition: transform 1.0s ease-in-out;
+	transform: rotateY( -180deg );
+}*/	
+
+/*.Karte:hover .front1 {
+	transition: transform 1.0s ease-in-out;
+	transform: rotateY( 180deg );
+}	*/
+
+
+.Karte-1-Kiste-3D {
+	background-color: darkgrey;
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+.Karte-2-Kiste-3D {
+	background-color: darkgrey;
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+.Karte-3-Kiste-3D {
+	background-color: darkgrey;
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+.Karte-4-Kiste-3D {
+	background-color: darkgrey;
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+.Karte-5-Kiste-3D {
+	background-color: darkgrey;
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+.Karte-6-Kiste-3D {
+	background-color: darkgrey;
+	border-radius: 10px;
+
+	perspective-origin: 50% 50%;
+	perspective: $pers;
+}
+
+
+
+
+
+.front2 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: #a57a8d;
+	background-image: url('/assets/images/sprites/Mensch2.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.front3 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: #bfbfbc;
+	background-image: url('/assets/images/sprites/Mensch3.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.front4 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: #778da2;
+	background-image: url('/assets/images/sprites/Mensch4.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.front5 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: #e59295;
+	background-image: url('/assets/images/sprites/Mensch5.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.front6 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-color: #899997;
+	background-image: url('/assets/images/sprites/Mensch6.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+
+
+.back2 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-image: url('/assets/images/sprites/dummy_back_002.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.back3 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-image: url('/assets/images/sprites/dummy_back_003.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.back4 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-image: url('/assets/images/sprites/dummy_back_004.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.back5 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-image: url('/assets/images/sprites/dummy_back_005.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+.back6 {
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	background-image: url('/assets/images/sprites/dummy_back_006.svg');
+
+	transition: transform 1.0s ease-in-out;
+	&:hover { transform: rotateY( 180deg ); }
+}
+
+
+.Karten-Kiste-Grid {
+	background-color: lightgrey;
+
+	display: grid;
+	grid-gap: 15px;
+	justify-content: center;
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+	@mixin at320 {
+		grid-template-columns: 156px 156px;
+		grid-template-rows: 250px 250px 250px;
+  }
+
+  @mixin at560 {
+  	grid-template-columns: 156px 156px 156px;
+		grid-template-rows: 250px 250px;
+  }
+
+	@mixin at1050 {
+   	grid-template-columns: 156px 156px 156px 156px 156px 156px;
+ 		grid-template-rows: 250px;
+	}
+
+}
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+.headline {
+	padding-top: 60px;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+
+	@mixin at560 {
+		font-size: 16px;
+	}
+
+	@mixin at1050 {
+		font-size: 20px;
+	}
+}
+
+.headline-2 {
+	padding-top: 0px;
+	padding-bottom: 22px;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+
+	@mixin at560 {
+		font-size: 16px;
+	}
+
+	@mixin at1050 {
+		font-size: 20px;
+	}
+}
+

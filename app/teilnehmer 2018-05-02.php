@@ -2,11 +2,11 @@
 <!-- MARU -->
 <html>
 <head>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
   <!-- TEST -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no" /> -->
   <!-- TEST -->
 
 
@@ -36,15 +36,6 @@
 </head>
 <body id="teilnehmer">
 
-  <!-- Muss ein Symbol in jeder Seite definiert werden auf der es benutzt wird? -->
-  <!-- Vermutlich ja -->
-  <!-- Vorrat an inline svg sprites -->
-  <svg style="display:none;">
-    <symbol id="sym-mouth">
-      <rect width="480" height="480"/>
-    </symbol>
-  </svg>
-
   <!-- NAVBAR importiert -->
   <?php require 'assets/_includes/_navbar.php'; ?>
  
@@ -68,17 +59,10 @@
 
     <div class="Karten-Kiste-Grid">
 
-        <!-- Karte 1 -->
         <div class="Karte-Kiste-3D">
           <div class="Einzel-Karte">
             <div class="front-gemeinsam front1b "></div>
             <div class="front-gemeinsam front1"></div>
-            <!-- Version mit svg inline sprite -->
-            <div class="user-mund">
-              <svg class="Mund-knapp" viewBox="0 0 480 480">
-                <use xlink:href="#sym-mouth"></use>
-              </svg>
-            </div>
             <div class="back-gemeinsam back1">
               <div id='b1' class="Logo Firmen"></div>
             </div>
@@ -86,18 +70,11 @@
               <h3 class="Karte-back-text-2">Firmen</h3>
           </div>
         </div>
-
-        <!-- Karte 2 -->
+        
         <div class="Karte-Kiste-3D">
           <div class="Einzel-Karte">
             <div class="front-gemeinsam front2b "></div>
             <div class="front-gemeinsam front2"></div>
-            <!-- Version mit svg inline sprite -->
-            <div class="user-mund">
-              <svg class="Mund-knapp" viewBox="0 0 480 480">
-                <use xlink:href="#sym-mouth"></use>
-              </svg>
-            </div>
             <div class="back-gemeinsam back2">
               <div class="Logo Universitaeten"></div>
             </div>
@@ -106,17 +83,10 @@
           </div>
         </div>
 
-        <!-- Karte 3 -->
         <div class="Karte-Kiste-3D">
           <div class="Einzel-Karte">
             <div class="front-gemeinsam front3b "></div>
             <div class="front-gemeinsam front3"></div>
-            <!-- Version mit svg inline sprite -->
-            <div class="user-mund">
-              <svg class="Mund-knapp" viewBox="0 0 480 480">
-                <use xlink:href="#sym-mouth"></use>
-              </svg>
-            </div>
             <div class="back-gemeinsam back3">
               <div class="Logo Behoerden"></div>
             </div>
@@ -125,17 +95,10 @@
           </div>  
         </div>
 
-        <!-- Karte 4 -->
         <div class="Karte-Kiste-3D">
           <div class="Einzel-Karte">
             <div class="front-gemeinsam front4b "></div>
             <div class="front-gemeinsam front4"></div>
-            <!-- Version mit svg inline sprite -->
-            <div class="user-mund-zwei">
-              <svg class="Mund-knapp" viewBox="0 0 480 480">
-                <use xlink:href="#sym-mouth"></use>
-              </svg>
-            </div>
             <div class="back-gemeinsam back4">
               <div class="Logo Bildungstraeger"></div>
             </div>
@@ -144,17 +107,10 @@
          </div>
         </div>
 
-        <!-- Karte 5 -->
         <div class="Karte-Kiste-3D">
           <div class="Einzel-Karte">
             <div class="front-gemeinsam front5b "></div>
             <div class="front-gemeinsam front5"></div>
-            <!-- Version mit svg inline sprite -->
-            <div class="user-mund">
-              <svg class="Mund-knapp" viewBox="0 0 480 480">
-                <use xlink:href="#sym-mouth"></use>
-              </svg>
-            </div>
             <div class="back-gemeinsam back5">
               <div class="Logo Hochschulen"></div>
             </div>
@@ -163,17 +119,10 @@
           </div>  
         </div>
 
-        <!-- Karte 6 -->
         <div class="Karte-Kiste-3D">
           <div class="Einzel-Karte">
             <div class="front-gemeinsam front6b "></div>
             <div class="front-gemeinsam front6"></div>
-            <!-- Version mit svg inline sprite -->
-            <div class="user-mund">
-              <svg class="Mund-knapp" viewBox="0 0 480 480">
-                <use xlink:href="#sym-mouth"></use>
-              </svg>
-            </div>
             <div class="back-gemeinsam back6">
               <div class="Logo Institutionen"></div>
             </div>

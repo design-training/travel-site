@@ -13,7 +13,7 @@
 /*Testweise hineinkopiert*/
 
 	.primary-nav {
-		padding-top: 10px;
+		padding-top: 12px;
 
 		@mixin atMedium {
 			padding-top: 0;
@@ -38,8 +38,14 @@
 		transform: translateX(-5.5%);*/
 		/*width: 134%;
 		transform: translateX(-13%);*/
+
+		/*width: 116%;
+		transform: translateX(-18px);*/
+		
+		/*Menu soll von oben nach unten reinkommen*/
 		width: 116%;
 		transform: translateX(-18px);
+
 		/*padding-right: 0px;*/
 		opacity: 1;
 	
@@ -66,7 +72,7 @@
 		text-decoration: none;
 		display: block;
 		/*padding: 5px 8px;*/
-		padding: 10px 14px;
+		padding: 12px 14px;
 		/*Versuch die Schriftgröße in der Mobil-Version anzupassen*/
 		font-size: 1.1rem;
 		/*width: 110%;*/
@@ -75,6 +81,7 @@
 		background-image: $Verlauf;
 
 		/*Test um die horizontale Lücke in FireFox wegzubekommen*/
+		/*funktioniert*/
 		margin-bottom: -1px;
 
 		/*Test*/
@@ -89,14 +96,14 @@
 
 		@mixin atMedium {
 			font-size: 1.1rem;
-			padding: 10px 14px;
+			padding: 12px 14px;
 			background-color: $MenuBackNotSelected;
 			/*background-color: green;*/
 
 			&.is-current-link {
 				color: #ffffff;
 				background-color: $MenuBackSelected;
-				/*padding: 10px 14px;*/
+				/*padding: 12px 14px;*/
 			}
 
 			/*von mir hinzugefügt*/

@@ -3,10 +3,10 @@
   position: absolute;
   width: 100%;
   /*von mir hinzugefügt*/
-  height: 40px;
+  height: 43px;
   /*von mir hinzugefügt*/
   z-index: 2;
-  transition: background-color .3s ease-out;
+  transition: background-color 0.3s ease-out;
   /*Menuleiste soll auch auf kleinen Geräten sichbar bleiben*/
   /*allerdings nicht so riesig*/
   /*deswegen die height Angabe*/
@@ -14,10 +14,16 @@
   position: fixed;
   background-color: $MenuBackNotSelected;
   background-image: $Verlauf;
+  /*Test*/
+  /*.side-header__wrapper {max-height: 100%;}*/
+  /*Test*/
 
   &--is-expanded {
     background-color: rgba($MenuBackNotSelected, 0.8);
     background-image: $Verlauf;
+    /*Test*/
+    /*.side-header__wrapper {max-height: auto;}*/
+    /*Test*/
   }
   
   @mixin atMedium {
@@ -133,9 +139,28 @@
   }
 
   &__menu-content {
-    opacity: 0;
+    /*Menu soll von oben reinkommen*/
+    /*transform: translateY(-55px);*/
+    /*opacity: 0.5;*/
+    /*Menu soll von oben reinkommen*/
+
+
+
+    /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+    height: 0px;
+    /*Weclhe Rolle spielt hier die Zahl für die Höhe?*/
+    /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+
+
+
+    opacity: 0.0;
     transform: scale(1.2);
-    transition: all .3s ease-out;
+
+    /*meine Versuche*/
+    transform: translateY(-155px);
+    /*meine Versuche*/
+
+    transition: all 0.3s ease-out;
     position: relative;
     z-index: -10;
     padding-top: 30px;
@@ -149,11 +174,24 @@
     }
 
     &--is-visible {
+      /*Menu soll von oben reinkommen*/
+      /*transform: translateY(155px);*/
+      /*Menu soll von oben reinkommen*/
+
       opacity: 1;
       z-index: 1;
       transform: scale(1);
       /*Test*/
       width: 100%;
+      
+
+
+      /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+      height: 100%;
+      /*2018-05-06 Test um das unsichtbar überlagerte Menu zu entfernen*/
+
+
+
     }
   }
 }

@@ -1,10 +1,14 @@
 /*Trainer*/
 .diamant-small-grey-alpha {
-  color: rgba(255, 255, 255, 0.55);
-  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.33);
+  font-size: 0.8em;
   vertical-align: 0.1em;
 }
 /*Trainer*/
+
+
+
+
 
 .Karte-Kiste-3D {
 	/*background-color: darkgrey;*/
@@ -22,24 +26,15 @@
 	/*Die Texte auf der Kartenrückseite sollen sanft eingeblendet werden*/
 	&:hover .Karte-back-text-1 {opacity: 1.0;}
 	&:hover .Karte-back-text-1 {transition: opacity $fadeText1 ease;}
-	/*&:hover .Karte-back-text-1 {transform: rotateZ(-30deg);}*/
-	/*&:hover .Karte-back-text-1 {transform: translateX(-30px);}*/
-
 
 	/*Die Texte auf der Kartenrückseite sollen sanft eingeblendet werden*/
 	&:hover .Karte-back-text-2 {opacity: 1.0;}
 	&:hover .Karte-back-text-2 {transition: opacity $fadeText2 ease;}
 
-	
-
-
 	/*Trainer*/
 	&:hover .front0 {transition: opacity $fadeHose ease;}
 	&:hover .front0b {transition: opacity $fadeHose ease;}
 	/*Trainer*/
-
-
-
 
 	&:hover .front1 {transition: opacity $fadeHose ease;}
 	&:hover .front1b {transition: opacity $fadeHose ease;}
@@ -77,23 +72,6 @@
 	&:hover .front6  {opacity: 0.0;}
 	&:hover .front6b {opacity: 1.0;}
 }
-
-.sensor {
-	width: 156px;
-	height: 250px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	background-color: rgba(200, 20, 20, 0.5);
-
-	/*&:hover .sensor {background-color: rgba(20, 200, 20, 0.5);}*/
-}
-
-.sensor:hover {
-	background-color: rgba(20, 200, 20, 0.5);
-}
-
 
 /*.Einzel-Karte:hover .Einzel-Karte { transform: rotateY(180deg);}*/
 
@@ -134,23 +112,21 @@
 
 
 
-
 /*Trainer*/
-.front0 {
+/*.front0 {
 	background-image: url('/assets/images/sprites/Mensch0.svg');
 }
 
 .front0b {
 	background-image: url('/assets/images/sprites/Mensch0b.svg');
-}
+}*/
 /*Trainer*/
 
 
 
 
-
 .front1 {
-	/*background-color: #f4c6ce;*/
+	background-color: #f4c6ce;
 	background-image: url('/assets/images/sprites/Mensch1.svg');
 }
 
@@ -213,25 +189,23 @@
 
 
 .user-mund {
-	backface-visibility: hidden;
   position: absolute;
 	top: 7.2%;
   left: 17.3%;
   /*die Änderung von width: 100% auf width: 70% verschiebt den Mund*/
   width: 70%;
   transform: rotate(-45deg);
-  z-index: 2;
+  z-index: 3;
 }
 
 .user-mund-zwei {
-	backface-visibility: hidden;
   /*für den Kerl mit zwei Hosen*/
   position: absolute;
   top: 7.2%;
   left: 3.0%;
   width: 70%;
   transform: rotate(-45deg);
-  z-index: 2;
+  z-index: 3;
  }
 
 .Mund-knapp {
@@ -247,7 +221,6 @@
   fill: #4a6c8d;
   border-radius: 10px;
   /*fill: red;*/
-  z-index: 1;
 }
 
 .Karte-Kiste-3D:hover .Mund-knapp {
@@ -265,7 +238,7 @@
 
 
 .back-gemeinsam {
-	/*backface-visibility: hidden;*/
+	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -284,10 +257,7 @@
 }
 
 .Karte-back-text-1 {
-	/*transform: translateX(30px);*/
-	/*transform: rotateZ(30deg);*/
-	/*z-index: 30;*/
-	/*backface-visibility: hidden;*/
+	backface-visibility: hidden;
 	position: absolute;
 	top: 140px;
 	text-align: center;
@@ -298,11 +268,10 @@
 	/*color: $mainOrange;*/
 	color: #fff;
 	/*opacity: 0.75;*/
-	opacity:0;
-	transition: 1.4s;
+	opacity: 0.0;
 
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 400;
 
 	@mixin at560 {
 		font-size: 16px;
@@ -314,8 +283,7 @@
 }
 
 .Karte-back-text-2 {
-	/*z-index: 3;*/
-	/*backface-visibility: hidden;*/
+	backface-visibility: hidden;
 	position: absolute;
 	top: 160px;
 	text-align: center;
@@ -329,8 +297,7 @@
 	font-weight: 300;
 
 	/*opacity: 0.90;*/
-	opacity:0;
-	transition: 1.0s;
+	opacity: 0.0;
 	
 	@mixin at560 {
 		font-size: 22px;
@@ -413,16 +380,6 @@
 	background-position: center;
 }
 
-.EberhardStenzel {
-	background-image: url('/assets/images/sprites/Logo-es.svg');
-	background-size: 70px 70px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-
-
-
 
 
 
@@ -452,14 +409,11 @@
 }
 
 
-/*:root {
-	--Farbe: red;
-}*/
+
 
 
 .Karten-Kiste-Grid {
 	/*background-color: lightgrey;*/
-	/*background-color: --Farbe;*/
 
 	display: grid;
 	grid-gap: 15px;
@@ -488,43 +442,6 @@
 	}
 
 }
-
-
-
-/*Trainer*/
-.Karten-Kiste-Grid-Trainer {
-
-	/*background-color: lightgrey;*/
-	display: grid;
-	grid-gap: 15px;
-	justify-content: center;
-	min-width: 156px;
-	min-height: 250px;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 10px;
-
-	@mixin at320 {
-		grid-template-columns: 156px;
-		grid-template-rows: 250px;
-  }
-
-  @mixin at560 {
-  	grid-template-columns: 156px;
-		grid-template-rows: 250px;
-  }
-
-	@mixin at1050 {
-   	grid-template-columns: 156px;
- 		grid-template-rows: 250px;
-	}
-
-}
-/*Trainer*/
-
-
-
-
 
 
 
